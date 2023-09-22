@@ -1,0 +1,23 @@
+.cantainer{
+    background-color: black;
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+
+}
+.item1{
+    background-color: brown;
+    height: 10rem;
+    width: 10rem;
+}
+.item1:hover{
+    
+    align-self: center;
+    background-color: aqua;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 3rem;
+    transition-duration: 3s;
+    transition-delay: 1s;
+    transform-style: inherit;
+}

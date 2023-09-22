@@ -1,0 +1,22 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+}
+.body{
+    background-image: url(./logo.png);
+    background-size: cover;
+    background-position: center;
+    height: 37rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

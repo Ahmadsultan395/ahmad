@@ -1,0 +1,109 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    font-size: calc(10px + 1vmin);
+}
+
+body {
+    background-image: linear-gradient(45deg ,rgba(112, 47, 4, 0.294), rgba(255, 132, 0, 0.18)), url('./hero.jpg');
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100vh;
+    position: relative;
+}
+.navbar{
+    /* padding: 1rem 1rem 1rem 0rem; */
+    background-color: rgb(27, 23, 23);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+.signup,.login{
+    background-color: orange;
+    color:white;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg {
+    background-color: rgba(69, 65, 70, 0.753);
+
+    height: 32rem;
+    width: 27rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: inset 0px 0px 30px white;
+
+}
+
+h3 {
+    color: white;
+    position: absolute;
+    margin-bottom: 24rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+    
+}
+
+.reg p {
+    color: rgb(255, 255, 255);
+    padding: 1rem 1rem 1rem 0px;
+    
+}
+
+
+.reg input[type='text'],
+.reg input[type='password'] {
+
+    background-color: black;
+    height: 3rem;
+    width: 15rem;
+    border: none;
+    border-radius: .75rem;
+    padding-left: 1rem;
+}
+
+.reg input[type='submit'] {
+    background-color: brown;
+    height: 3rem;
+    width: 16rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.75rem;
+
+    margin-top: 1.5rem;
+}
+
+form {
+    margin-top: 7rem;
+}
+footer{
+    background-color: rgb(27, 23, 23);
+    color: white;
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: bold;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    bottom: 0%;
+    width: 100%;
+}

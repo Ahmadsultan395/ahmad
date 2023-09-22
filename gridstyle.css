@@ -1,0 +1,268 @@
+* {
+    margin: 0%;
+    padding: 0%;
+
+}
+
+html {
+    font-size: calc(10px + 1vmin);
+}
+
+body {
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+
+}
+
+a {
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+}
+
+
+.signup,
+.login {
+    background-color: coral;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    padding-top: .40rem;
+}
+
+.hr1 {
+    background-color: coral;
+    height: .20rem;
+    width: 6rem;
+    margin: 0.20rem auto 0.20rem auto;
+    border: none;
+}
+
+.hr2 {
+    background-color: coral;
+    height: .20rem;
+    width: 3rem;
+    margin: 0.20rem auto 0.20rem auto;
+    border: none;
+}
+
+.hr3 {
+    background-color: coral;
+    height: .20rem;
+    width: 1rem;
+    margin: 0.30rem auto auto auto;
+    border: none;
+}
+
+.cantainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    margin: 2rem;
+    height: 30rem;
+    width: 60rem;
+
+}
+
+.item1 {
+
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.item1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item2 {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.item2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item3 {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.item3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item4 {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.item4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item5 {
+    background-image: url("./i1.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.item5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item6 {
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.item6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item7 {
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.item7 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item8 {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.item8 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item9 {
+    background-color: rgb(68, 0, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.item9 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+
+@media(max-width:950px) {
+    .navbar a {
+        padding: 0.20rem;
+        color: red;
+        font-size: 1.1rem;
+
+    }
+
+    .table {
+        display: grid;
+        background-color: rgb(255, 255, 255);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+        margin: 2rem;
+        width: 30rem;
+        height: 60rem;
+
+    }
+}
+
+@media(max-width:600px) {
+    .navbar a {
+        padding: 0.20rem;
+        color: rgb(0, 13, 255);
+        font-size: 0.7rem;
+
+    }
+
+    .table {
+        display: grid;
+        background-color: rgb(255, 255, 255);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+        margin: 2rem;
+        width: 15rem;
+        height: 90rem;
+    }
+}

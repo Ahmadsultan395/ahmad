@@ -1,0 +1,76 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+} */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    color: rgb(34, 152, 255);
+}
+a{
+    text-decoration: none;
+    padding: 0.75rem;
+    color: rgb(16, 126, 132);
+}
+a:hover{
+    background-color: darkgray;
+    color: rgb(0, 56, 105);
+}
+.sign,.login{
+    background-color: rgb(2, 46, 46);
+}
+.cantainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 35rem;
+    width: 60rem;
+    margin: 2rem;
+    flex-direction: row;
+}
+.item1{
+    flex-grow: 2;
+    background-color:yellow;
+    height: 10rem;
+    width: 28rem;
+    margin-right: 1rem;
+}
+.item2{
+    background-color: rgb(69, 199, 112);
+    height: 10rem;
+    width: 28rem;
+}
+.item3{
+    background-color: rgb(96, 204, 105);
+    height: 10rem;
+    width: 28rem;
+    margin-right: 1rem;
+}
+.item4{
+    background-color: rgb(81, 121, 201);
+    height: 10rem;
+    width: 28rem;
+}
+.row1{
+    margin: .5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
