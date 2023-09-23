@@ -8,6 +8,10 @@ html {
     font-size: calc(10px + 1vmin);
 }
 
+a{
+    display: inline-block;
+}
+
 body {
     background-color: antiquewhite;
     background-repeat: no-repeat;
@@ -17,6 +21,7 @@ body {
     justify-content: space-between;
     height: 100vh;
     box-sizing: border-box;
+    position: relative;
 }
 
 nav {
@@ -24,13 +29,25 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: black;
+}
 
+button#hamburger{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    padding: 0.5rem 1rem;
+    display: none;
+}
+
+nav img{
+    width: 2rem;
 }
 
 a {
     text-decoration: none;
     padding: 1rem;
     color: white;
+    font-size: 0.8rem;
 }
 
 
@@ -225,13 +242,9 @@ footer {
 }
 
 @media(max-width:950px) {
-    .navbar a {
-        padding: 0.20rem;
-        color: red;
-        font-size: 1.1rem;
-
+    nav a{
+        padding: 0.5rem;
     }
-
     .table {
         display: grid;
         background-color: rgb(255, 255, 255);
@@ -247,14 +260,7 @@ footer {
 }
 
 @media(max-width:600px) {
-    .navbar a {
-        padding: 0.20rem;
-        color: rgb(0, 13, 255);
-        font-size: 0.7rem;
-
-    }
-
-    .table {
+        .table {
         display: grid;
         background-color: rgb(255, 255, 255);
         grid-template-columns: repeat(1, 1fr);
@@ -265,4 +271,32 @@ footer {
         width: 15rem;
         height: 90rem;
     }
+}
+
+.toggle{
+    display: flex;
+}
+
+@media(max-width:480px) {
+        button#hamburger{
+            display: block;
+            z-index: 99;
+        }
+
+        nav{
+            display: none;
+            position: absolute;
+            width: 15rem;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        nav div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 0.7rem;
+        }
 }
