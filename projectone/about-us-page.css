@@ -1,0 +1,282 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: calc(10px, 1vmin);
+}
+
+#hamburger {
+    display: none;
+    position: absolute;
+    top: 5%;
+    height: 3rem;
+    width: 6rem;
+    z-index: 99;
+    left: 5%;
+}
+
+/* navbar////////////////////////////////////////// */
+#navbar {
+    z-index: 50;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: .3px solid orange; */
+    /* box-shadow: 0px 1px 1px orange inset ; */
+    height: 15vh;
+    width: 100%;
+    position: sticky;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+}
+
+nav img {
+    height: 6rem;
+    width: 6rem;
+}
+
+#menu {
+    background-color: transparent;
+    width: 50%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#menu a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+}
+
+#menu a:hover {
+    font-size: 1.9rem;
+    transition: .3s;
+    text-shadow: .3px .3px 3px white;
+    /* box-shadow: 3px 3px 10px black; */
+
+}
+
+
+/* head section//////////////////////////////////// */
+
+#head-section {
+    background-image: url(./itify\ header\ image.jpg);
+    min-height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* margin-bottom: 5rem; */
+}
+
+.head-text {
+    min-height: 40ch;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+.head-text h2 {
+    font-size: 5rem;
+}
+
+.head-text p {
+    font-size: 1.5rem;
+}
+
+/* ////////////////////////////////////////////////////// */
+/*  about section/////////////////////////////////////////////////////// */
+
+.who-we-are {
+    /* background-color: aqua; */
+    min-height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.who-we-are h2 {
+    font-size: 5rem;
+}
+
+.about-section-cantainer {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 100%;
+
+}
+
+.about-section {
+    /* background-color:blue; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 70vh;
+    width: 90%;
+    gap: 6rem;
+}
+
+.about-section-image {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.about-section-image-innerdiv {
+    border: 3px solid gold;
+    height: 80%;
+    width: 80%;
+}
+
+.about-section-image img {
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50px, 50px);
+}
+
+.about-section-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-section-text h5 {
+    font-size: 1.2rem;
+    align-self: flex-start;
+    padding-bottom: 0.3rem;
+}
+
+.about-section-text h2 {
+    font-size: 2.5rem;
+}
+
+.about-section-text p {
+    font-size: 1rem;
+    text-align: justify;
+    padding-top: 2.5rem;
+}
+
+.about-section-mail {
+    align-self: flex-start;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1.5rem 0rem 2rem 0rem;
+}
+
+.about-section-text button {
+    height: 3rem;
+    width: 8rem;
+    border: 2px solid gold;
+    font-weight: 500;
+    align-self: flex-start;
+    box-shadow: 2px 2px 1px  rgba(0, 0, 0, 0.596) ;
+    background-color: transparent;
+}
+.about-section-text button:hover{
+background-color:orange;
+border: none;
+transform: scale(1.1);
+color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* merdia quary/////////////////////////////////////////////////////////////////////////// */
+
+@media(max-width:500px) {
+    button#hamburger {
+        display: block;
+        z-index: 99;
+        background-color: red;
+    }
+
+    #navbar {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 80vh;
+        width: 50%;
+        z-index: 80;
+        /* background-color: wheat; */
+    }
+
+    #navbar div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+
+}
