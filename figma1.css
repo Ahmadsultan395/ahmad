@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    position: relative;
+    /* position: relative; */
     box-sizing: border-box;
 }
 
@@ -20,33 +20,37 @@ header {
     background-position: center;
     height: 80vh;
     width: 100%;
-    position: relative;
-
-
 }
 
 .navbar {
+    position: absolute;
     display: flex;
     justify-content: space-between;
+    background-color: white;
     width: 85%;
-    position: absolute;
+    height: 10vh;
     top: 3rem;
     left: 50%;
     transform: translateX(-50%);
 }
-
+.image img{
+    height: 4rem;
+    width: 9rem;
+}
 .navlinks {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 60%;
+    font-size: .8rem;
 }
 
 .get-started-button {
-    height: 3rem;
-    width: 8rem;
     background-color: black;
     color: white;
+    display: inline-block;
+    height: 3rem;
+    width: 8rem;
     border-radius: .60rem;
     border: none;
     cursor: pointer;
@@ -60,10 +64,10 @@ header {
 }
 
 .header-text {
+    position: absolute;
     top: 68%;
     left: 44%;
-    position: absolute;
-    font-size: 2.3rem;
+    font-size: 2.1rem;
 
 }
 
@@ -73,7 +77,7 @@ a {
 
 @media (max-width:1034px) {
     .navbar {
-        font-size: .9rem;
+        font-size: .7rem;
         /* width: 80%; */
     }
 
@@ -107,7 +111,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 97%;
+    width: 100%;
     height: 25vh;
     color: white;
     font-size: 3rem;
@@ -269,8 +273,8 @@ a {
 }
 .service-page{
     width: 100%;
-    background-color:rgb(13, 12, 12);
-    height: 120vh;
+    background-color:#292930;
+    height: 130vh;
     color: white;
     margin-top: 6rem;
 }
@@ -304,7 +308,7 @@ a {
     justify-content: center;
     height: 60vh;
     width: 22%;
-     background-color: rgb(28, 27, 26);
+    background-color:#393945;
      border-radius: 1rem;
      
 }
@@ -338,7 +342,7 @@ a {
     justify-content: center;
     height: 60vh;
     width: 22%;
-    background-color: rgb(28, 27, 26);
+    background-color:#393945;
      border-radius: 1rem;
 }
 .card2 span{
@@ -371,7 +375,7 @@ a {
     justify-content: center;
     height: 60vh;
     width: 22%;
-    background-color: rgb(28, 27, 26);
+    background-color:#393945;
      border-radius: 1rem;
 }
 .card3 span{
@@ -404,7 +408,7 @@ a {
     justify-content: center;
     height: 60vh;
     width: 22%;
-    background-color: rgb(28, 27, 26);
+    background-color:#393945;
      border-radius: 1rem;
 }
 .card4 span{
@@ -429,4 +433,294 @@ a {
     height: .5vh;
     background-color: white;
     border-radius: 4rem;
+}
+.card-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    width: 100%;
+    flex-direction: row;
+}
+.card-btn button{
+     height: 3rem;
+     width: 8rem;
+     margin: .6rem;
+     border-radius: .4rem;
+     border: none;
+     background-color:#393945;
+     color: white;
+}
+.card-btn1:hover{
+    background-color: white;
+    color: black;
+}
+.card-btn2:hover{
+    background-color: white;
+    color: black;
+}
+.team-page{
+    width: 100%;
+    height: 110vh;
+    color: white;
+}
+.team-page-part{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    /* background-color: red; */
+    height: 40vh;
+}
+.team-page-logo{
+    background-color: rgb(253, 107, 255);
+    padding: 1rem;
+    border-radius:50%;
+    width: 4%;
+    height: 4vh;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+.team-page-part h3{
+    font-size: 1.7rem;
+    color: black; 
+}
+.team-cards{
+    /* background-color: blue; */
+    margin-top: 1rem;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* team card1 */
+.team-card1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:aliceblue;
+    height: 55vh;
+    width: 17%;
+
+}
+.tcard1-Photo{
+    height:30vh;
+    width: 95%;
+    border-radius: 2rem 2rem 0rem 0rem ;
+    
+}
+.tcard1-line{
+    margin-top: .4rem;
+}
+.tcard1-p{
+    font-size: 1.5rem;
+    color: black;
+    margin-top: .7rem;
+}
+.tcard1-p span{
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+    margin-top: .5rem;
+}
+.tcard1-social{
+    margin-top: 1rem;
+}
+/* team card 2 */
+
+.team-card2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:aliceblue;
+    height: 55vh;
+    width: 17%;
+
+}
+.tcard2-Photo{
+    height:30vh;
+    width: 95%;
+    border-radius: 2rem 2rem 0rem 0rem ;
+    
+}
+.tcard2-line{
+    margin-top: .4rem;
+}
+.tcard2-p{
+    font-size: 1.5rem;
+    color: black;
+    margin-top: .7rem;
+}
+.tcard2-p span{
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+    margin-top: .5rem;
+}
+.tcard2-social{
+    margin-top: 1rem;
+}
+
+/* team card3 */
+
+.team-card3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:aliceblue;
+    height: 55vh;
+    width: 17%;
+
+}
+.tcard3-Photo{
+    height:30vh;
+    width: 95%;
+    border-radius: 2rem 2rem 0rem 0rem ;
+    
+}
+.tcard3-line{
+    margin-top: .4rem;
+}
+.tcard3-p{
+    font-size: 1.5rem;
+    color: black;
+    margin-top: .7rem;
+}
+.tcard3-p span{
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+    margin-top: .5rem;
+}
+.tcard3-social{
+    margin-top: 1rem;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(#E9F7FF,#FFDBD4,#FFF3CA);
+    height: 80vh;
+    width: 100%;
+}
+.location-head{
+    height: 16vh;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 10% 70% 20%;
+}
+.lh-logo img{
+    width: 70%;
+    height: 10vh;
+}
+.lh-p p{
+    font-size: 1.7rem;
+}
+.lh-p span{
+    font-size: 1rem;
+}
+.lh-btn{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.lh-btn button{
+    border: none;
+    border-radius: .5rem 0rem 0rem .5rem ;
+    color: white;
+    background-color: #292930;
+    height: 40%;
+    width: 80%;
+}
+
+.location-cards{
+    height: 40vh;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.location-card1 {
+    height: 30vh; width: 25%;
+    background-color: white;
+    padding: 2rem 1rem 1rem 1rem;
+    border-radius: 2rem;
+}
+.flag1{
+    height: 6vh;
+    width: 20%;
+}
+.location-card1 h3{
+    font-size: 1.3rem;
+}
+.location-card1 p{
+    font-size: .9rem;
+}
+.location-cel1 img{
+    height: 3vh;
+    padding-right: .5rem;
+}
+.location-mail1 img{
+    height: 2.5vh;
+    padding-right: .5rem;
+}
+
+/* location card 2 */
+
+.location-card2 {
+    height: 30vh; width: 25%;
+    background-color: white;
+    padding: 2rem 1rem 1rem 1rem;
+    border-radius: 2rem;
+}
+.flag2{
+    height: 6vh;
+    width: 20%;
+}
+.location-card2 h3{
+    font-size: 1.3rem;
+}
+.location-card2 p{
+    font-size: .9rem;
+}
+.location-cel2 img{
+    height: 3vh;
+    padding-right: .5rem;
+}
+.location-mail2 img{
+    height: 2.5vh;
+    padding-right: .5rem;
+}
+
+/* location card 333 */
+
+.location-card3 {
+    height: 30vh; width: 25%;
+    background-color: white;
+    padding: 2rem 1rem 1rem 1rem;
+    border-radius: 2rem;
+}
+.flag3{
+    height: 6vh;
+    width: 20%;
+}
+.location-card3 h3{
+    font-size: 1.3rem;
+}
+.location-card3 p{
+    font-size: .9rem;
+}
+.location-cel3 img{
+    height: 3vh;
+    padding-right: .5rem;
+}
+.location-mail3 img{
+    height: 2.5vh;
+    padding-right: .5rem;
 }

@@ -1,0 +1,87 @@
+*{
+    padding:0%;
+    margin: 0%;
+    text-decoration: none;
+}
+body{
+    position: relative;
+    padding: 0%;
+    margin: 0%;
+}
+.topbar{
+    background-color: orange;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+    width: 100%;
+}
+.topbar-address{
+    position: absolute;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+    width: 90%;
+    height:8vh;
+}
+.mail-cel-address{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 8vh;
+    width: 50%;
+}
+li{
+    list-style: none;
+}
+.mail{
+    font-size: .8rem;
+}
+.mail::before{
+    content: url(./gmail.png);
+    padding-right: .5rem;
+    height: 1rem;
+    width: 1rem;
+    align-self: center;
+}
+.cel{
+    font-size: .8rem;
+}
+.cel::before{
+    content: url(./phone.png);
+    padding-right: .5rem;
+    height: 1rem;
+    width: 1rem;
+}
+.address{
+    font-size: .8rem;
+}
+.address::before{
+    content: url(./location1.png);
+    padding-right: .5rem;
+}
+.time-logo{
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: row;
+    z-index: 99;
+}
+.time{
+    justify-self: center;
+    align-self: center;
+}
+.time::before{
+    content: url(./times.png);
+    content: attr(height=3rem;);
+}
+.social-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.insta, .fb, .twi{
+    width: 2rem;
+    height: 2rem;
+}
+
