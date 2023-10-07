@@ -17,12 +17,17 @@ html {
 
 #hamburger {
     display: none;
+    background-color: transparent;
     position: absolute;
-    top: 5%;
-    height: 3rem;
-    width: 6rem;
+    top: 2%;
+    height: 4rem;
+    width: 3rem;
     z-index: 99;
-    left:5%;
+    left: 3%;
+}
+#hamburger img{
+    width: 2rem;
+    height: 3rem;
 }
 
 /* navbar////////////////////////////////////////// */
@@ -43,8 +48,8 @@ html {
 }
 
 nav img {
-    height: 6rem;
-    width: 6rem;
+    height: 12rem;
+    width: 12rem;
 }
 
 #menu {
@@ -92,7 +97,7 @@ nav img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem 1rem 2rem 1rem;
     color: white;
 }
 
@@ -115,7 +120,7 @@ nav img {
     justify-content: center;
     align-items: center;
     background-color: aqua;
-    height: 100vh;
+    min-height: 150vh;
     width: 100%;
 }
 
@@ -125,10 +130,10 @@ nav img {
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
-    background-color: red;
+    /* background-color: red; */
     background-image: url(./service-bg.jpg);
     padding: 3rem;
-    min-height: 100vh;
+    min-height: 150vh;
     width: 100%;
 }
 
@@ -146,7 +151,7 @@ nav img {
     /* align-items: center;
     justify-content: center; */
     height: 30vh;
-    width: 40%;
+    min-width: 40%;
     padding: 2rem;
     margin-bottom: 2rem;
 }
@@ -170,10 +175,10 @@ nav img {
     /* background-color: blue; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 40vh;
+    /* grid-template-rows: 40vh; */
     gap: 1.5rem;
-    height: 40vh;
-    width: 65%;
+    min-height: 40vh;
+   width: 65%;
     border-radius: 2rem;
     border: none;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.311);
@@ -194,14 +199,17 @@ nav img {
     box-shadow: 1px 1px 20px black;
     position: relative;
 }
-.service1-item2-card1:hover{
+
+.service1-item2-card1:hover {
     background-color: orange;
     color: white;
 }
-.service1-item2-card1:hover .service1-item2-card1  img{
+
+.service1-item2-card1:hover .service1-item2-card1 img {
     background-color: white;
     color: black;
-} 
+}
+
 .service1-item2-card1 h2 {
     font-size: 2rem;
     padding-bottom: 1rem;
@@ -271,7 +279,7 @@ nav img {
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 1.5rem;
-    height: 33vh;
+    min-height: 33vh;
     width: 100%;
     border-radius: 2rem;
     border: none;
@@ -364,7 +372,7 @@ nav img {
     display: grid;
     grid-template-columns: 60% 40%;
     gap: 1.5rem;
-    height: 29vh;
+    min-height: 29vh;
     width: 100%;
     border-radius: 2rem;
     border: none;
@@ -461,9 +469,161 @@ nav img {
 
 
 /* /////////////////////////////////////// */
+/* 95000000000000000000000000000000000000000000000000000000000000000000000000000000 */
+@media(max-width:850px) {
+    nav img{
+        height: 10rem;
+        width: 10rem;
+    }
+    #menu a {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+/* 85000000000000000000000000000000000000000000000000000000000000000000000 */
+@media(max-width:850px) {
+
+    #menu a {
+        font-size: .9rem;
+        font-weight: 400;
+    }
+
+    .head-text h2 {
+        font-size: 4rem;
+    }
+
+    .head-text p {
+        font-size: 1.2rem;
+    }
+
+    /* ///// */
+    .service1-item2 {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+       min-height: 40vh;
+       width: 100%;
+
+    }
+
+    .service1-item3 {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        min-height: 40vh;
+
+    }
+
+    .service1-item4 {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        min-height: 40vh;
+
+    }
+
+    .service1-item2-card1{
+        height: 40vh;
+    }
+    .service1-item1-card2{
+        height: 40vh;
+    }
+    .service1-item3-card1{
+        height: 40vh;
+    }
+    .service1-item3-card2{
+        height: 40vh;
+    }
+    .service1-item4-card1{
+        height: 40vh;
+    }
+    .service1-item4-card2{
+        height: 40vh;
+    }
 
 
+
+
+}
+
+/* 700000000000000000000000000000000000000000000000000000000 */
+@media(max-width:700px) {
+
+    nav img{
+        height: 8rem;
+        width: 8rem;
+    }
+
+    #menu a {
+        font-size: .8rem;
+        font-weight: 300;
+    }
+
+    .head-text h2 {
+        font-size: 3.5rem;
+    }
+
+    .head-text p {
+        font-size: 1.1rem;
+    }
+
+
+}
+
+/* 6000000000000000///////////////////////////////////////////// */
+@media(max-width:600px) {
+
+    #menu a {
+        font-size: .7rem;
+        font-weight: 300;
+    }
+
+    .head-text h2 {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+
+    .head-text p {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+
+}
+
+
+/* ////////////////////////////////////////////// */
 @media(max-width:500px) {
+    button#hamburger {
+        display: block;
+        z-index: 99;
+    }
+
+    #navbar {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 50vh;
+        width: 100%;
+        z-index: 80;
+        background-color: rgba(202, 200, 200, 0.945);
+        border-radius: 0 0 12rem 12rem;
+    }
+
+    #navbar div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+}
+
+/* ///////////////////////////////////////// */
+
+
+/* @media(max-width:500px) {
     button#hamburger {
         display: block;
         z-index: 99;
@@ -480,15 +640,15 @@ nav img {
         width: 50%;
         z-index: 99;
         /* background-color: wheat; */
-    }
-    #navbar div{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        gap: 0.7rem;
-    }
+/* }
 
-}   
+#navbar div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.7rem;
+}
 
+} */
 
