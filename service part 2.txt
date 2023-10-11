@@ -1,0 +1,197 @@
+#services-section2 {
+    /* background-color: red; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 6rem 0 3rem 0;
+
+}
+
+.services-section2-cantainer {
+    display: grid;
+    grid-template-columns: 40% 25% 25%;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+    min-height: 100vh;
+    width: 90%;
+}
+
+.servics2-card1 {
+    background-image: url(./Photo.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-row: 1/3;
+    border-radius: 2rem;
+    border: none;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+.servics2-card1-content {
+position: absolute;
+    background-color: rgba(0, 0, 139, 0.733);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+   
+    /* padding: 1rem; */
+}
+
+.servics2-card1-content h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.servics2-card1-content h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* .services-card part2222222222222222222//////////////// */
+
+.servics2-card2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 30vh;
+    width: 100%;
+    background-color: rgba(0, 0, 139, 0.726);
+    padding: 0.2rem .2rem 1rem 1rem;
+    border-radius: 0 4rem 0 4rem;
+    color: white;
+
+}
+.servics2-card2:hover{ 
+    transition: 1s;
+    transform: scaleY(1.1);
+    background-color: rgba(0, 0, 139, 0.87);
+}
+.servics2-card2 h2{
+    font-size:1.5rem ;
+    /* justify-self: start; */
+    align-self: flex-start;
+} 
+.servics2-card2 h3{
+    font-size:1rem ;
+   
+}  
+.servics2-card2 span{
+    font-size:3rem ;
+    padding-right: 1rem;
+   
+} 
+
+
+
+.servics2-card3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 30vh;
+    width: 100%;
+    background-color: rgba(0, 0, 139, 0.726);
+    padding: 0.2rem .2rem 1rem 1rem;
+    border-radius: 0 4rem 0 4rem;
+    color: white;
+
+}
+.servics2-card3:hover{ 
+    transition: 1s;
+    transform: scaleY(1.1);
+    background-color: rgba(0, 0, 139, 0.87);
+}
+.servics2-card3 h2{
+    font-size:1.5rem ;
+    /* justify-self: start; */
+    align-self: flex-start;
+} 
+.servics2-card3 h3{
+    font-size:1rem ;
+   
+}  
+.servics2-card3 span{
+    font-size:3rem ;
+    padding-right: 1rem;
+   
+} 
+
+/* //////////////// */
+.servics2-card4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 30vh;
+    width: 100%;
+    background-color: rgba(0, 0, 139, 0.726);
+    padding: 0.2rem .2rem 1rem 1rem;
+    border-radius: 0 4rem 0 4rem;
+    color: white;
+
+}
+.servics2-card4:hover{ 
+    transition: 1s;
+    transform: scaleY(1.1);
+    background-color: rgba(0, 0, 139, 0.87);
+}
+.servics2-card4 h2{
+    font-size:1.5rem ;
+    /* justify-self: start; */
+    align-self: flex-start;
+} 
+.servics2-card4 h3{
+    font-size:1rem ;
+   
+}  
+.servics2-card4 span{
+    font-size:3rem ;
+    padding-right: 1rem;
+   
+} 
+/* ////// */
+.servics2-card5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 30vh;
+    width: 100%;
+    background-color: rgba(0, 0, 139, 0.726);
+    padding: 0.2rem .2rem 1rem 1rem;
+    border-radius: 0 4rem 0 4rem;
+    color: white;
+
+}
+.servics2-card5:hover{ 
+    transition: 1s;
+    transform: scaleY(1.1);
+    background-color: rgba(0, 0, 139, 0.87);
+}
+.servics2-card5 h2{
+    font-size:1.5rem ;
+    /* justify-self: start; */
+    align-self: flex-start;
+} 
+.servics2-card5 h3{
+    font-size:1rem ;
+   
+}  
+.servics2-card5 span{
+    font-size:3rem ;
+    padding-right: 1rem;
+   
+} 
+
+/////////////////////////////////////////////////////////////////end

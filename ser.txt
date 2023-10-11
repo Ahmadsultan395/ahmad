@@ -1,0 +1,289 @@
+ <!-- sercice section part 222222222222222222222222222?????/////////////////////////// -->
+
+    <section id="services-section2">
+        <div class="services-section2-cantainer">
+
+            <div class="servics2-card1">
+                <div class="servics2-card1-content">
+                    <h2>WORKING PROCESS</h2>
+                    <h3> Our Working Process - How We Work For Our Customers</h3>
+                </div>
+            </div>
+            <div class="servics2-card2">
+
+                <h2><span>1.</span>Discovery</h2>
+                <h3>is the initial phase of a project where the team works to understand the client's needs and
+                    requirements.</h3>
+            </div>
+
+            <div class="servics2-card3">
+
+                <h2><span>2.</span>Planning</h2>
+                <h3>is the process of defining project goals, determining tasks and resources needed, and creating a
+                    roadmap for the development process</h3>
+            </div>
+
+            <div class="servics2-card4">
+
+                <h2><span>3.</span>Execute</h2>
+                <h3>The phase where the project plan is put into action, and the software is developed and tested
+                    according to the previously defined requirements and specifications. </h3>
+            </div>
+
+            <div class="servics2-card5">
+
+                <h2><span>4.</span>Deliver</h2>
+                <h3>The final phase of a project where the completed software product is tested, deployed, and
+                    handed over to the client for use. </h3>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* services -section part 222222222222222222222//////////////// */
+#services-section2 {
+    /* background-color: red; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 6rem 0 3rem 0;
+
+}
+
+.services-section2-cantainer {
+    display: grid;
+    grid-template-columns: 40% 25% 25%;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+    min-height: 70vh;
+    width: 90%;
+}
+
+.servics2-card1 {
+    background-image: url(/images/service/sevice2.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-row: 1/3;
+    border-radius: 2rem;
+    border: none;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+.servics2-card1-content {
+position: absolute;
+    background-color: rgba(0, 0, 139, 0.733);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+   
+    padding: 1rem;
+}
+
+.servics2-card1-content h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.servics2-card1-content h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* .services-card part2222222222222222222//////////////// */
+
+.servics2-card2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 30vh;
+    width: 100%;
+    background-color: rgba(0, 0, 139, 0.726);
+    padding: 0.2rem .2rem 1rem 1rem;
+    border-radius: 0 4rem 0 4rem;
+    color: white;
+
+}
+.servics2-card2:hover{ 
+    transition: 1s;
+    transform: scaleY(1.1);
+    background-color: rgba(0, 0, 139, 0.87);
+}
+.servics2-card2 h2{
+    font-size:1.5rem ;
+    /* justify-self: start; */
+    align-self: flex-start;
+} 
+.servics2-card2 h3{
+    font-size:1rem ;
+   
+}  
+.servics2-card2 span{
+    font-size:3rem ;
+    padding-right: 1rem;
+   
+} 
+
+
+
+.servics2-card3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 30vh;
+    width: 100%;
+    background-color: rgba(0, 0, 139, 0.726);
+    padding: 0.2rem .2rem 1rem 1rem;
+    border-radius: 0 4rem 0 4rem;
+    color: white;
+
+}
+.servics2-card3:hover{ 
+    transition: 1s;
+    transform: scaleY(1.1);
+    background-color: rgba(0, 0, 139, 0.87);
+}
+.servics2-card3 h2{
+    font-size:1.5rem ;
+    /* justify-self: start; */
+    align-self: flex-start;
+} 
+.servics2-card3 h3{
+    font-size:1rem ;
+   
+}  
+.servics2-card3 span{
+    font-size:3rem ;
+    padding-right: 1rem;
+   
+} 
+
+/* //////////////// */
+.servics2-card4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 30vh;
+    width: 100%;
+    background-color: rgba(0, 0, 139, 0.726);
+    padding: 0.2rem .2rem 1rem 1rem;
+    border-radius: 0 4rem 0 4rem;
+    color: white;
+
+}
+.servics2-card4:hover{ 
+    transition: 1s;
+    transform: scaleY(1.1);
+    background-color: rgba(0, 0, 139, 0.87);
+}
+.servics2-card4 h2{
+    font-size:1.5rem ;
+    /* justify-self: start; */
+    align-self: flex-start;
+} 
+.servics2-card4 h3{
+    font-size:1rem ;
+   
+}  
+.servics2-card4 span{
+    font-size:3rem ;
+    padding-right: 1rem;
+   
+} 
+/* ////// */
+.servics2-card5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 30vh;
+    width: 100%;
+    background-color: rgba(0, 0, 139, 0.726);
+    padding: 0.2rem .2rem 1rem 1rem;
+    border-radius: 0 4rem 0 4rem;
+    color: white;
+
+}
+.servics2-card5:hover{ 
+    transition: 1s;
+    transform: scaleY(1.1);
+    background-color: rgba(0, 0, 139, 0.87);
+}
+.servics2-card5 h2{
+    font-size:1.5rem ;
+    /* justify-self: start; */
+    align-self: flex-start;
+} 
+.servics2-card5 h3{
+    font-size:1rem ;
+   
+}  
+.servics2-card5 span{
+    font-size:3rem ;
+    padding-right: 1rem;
+   
+} 
+
+/* service part 2 media //////////////////////////// */
+
+/* 85000000000000000000000000000000000000000000000 */
+@media(max-width:850px) {
+
+    .services-section2-cantainer {
+        grid-template-columns:1fr;
+        grid-template-rows: 40% 25% 25% 25% 25% ;
+        gap: 3rem;
+        min-height: 100vh;
+        /* min-width: 100%; */
+    }
+    #services-section2{
+        min-height: 100vh;
+        /* min-width: 100%; */
+    }
+    /* .servics2-card1 {
+        grid-column: 1/3;
+} */
+    .servics2-card1-content {
+        min-height:120vh ;
+    }
+
+
+}
+
+
+
+
+
+
+
+
