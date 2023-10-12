@@ -93,11 +93,12 @@ nav img {
 
 .main-head-card {
     /* background-color: bisque; */
+    padding: 2rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     min-height: 70vh;
-    width: 95%;
+    width: 90%;
     /* top: -25%;
     transform: translateY(-25%); */
 }
@@ -125,11 +126,14 @@ nav img {
 .head-card1 h3 {
     font-size: 1.2rem;
     margin-bottom: .5rem;
+    color: darkblue;
+    font-weight: 500;
 }
 
 .head-card1 p {
     font-size: .9rem;
-    text-align: justify;
+    /* text-align: justify;
+    word-spacing: 0%; */
 }
 
 .head-card1:hover {
@@ -138,6 +142,9 @@ nav img {
     box-shadow: 5px 5px 20px rgba(20, 20, 20, 0.61);
     transform: scale(1.05);
     color: white;
+}
+.head-card1:hover h3{
+  color: white;
 }
 
 .head-card2 {
@@ -162,11 +169,12 @@ nav img {
 .head-card2 h3 {
     font-size: 1.2rem;
     margin-bottom: .5rem;
+    color: darkblue;
 }
 
 .head-card2 p {
     font-size: .9rem;
-    text-align: justify;
+    text-align: justify; word-spacing: 0%;
 }
 
 .head-card2:hover {
@@ -175,6 +183,9 @@ nav img {
     box-shadow: 5px 5px 20px rgba(20, 20, 20, 0.61);
     transform: scale(1.05);
     color: white;
+}
+.head-card2:hover h3{
+  color: white;
 }
 
 .head-card3 {
@@ -199,11 +210,13 @@ nav img {
 .head-card3 h3 {
     font-size: 1.2rem;
     margin-bottom: .5rem;
+    color: darkblue;
 }
 
 .head-card3 p {
     font-size: .9rem;
     text-align: justify;
+    word-spacing: .1rem;
 }
 
 .head-card3:hover {
@@ -213,6 +226,10 @@ nav img {
     transform: scale(1.05);
     color: white;
 }
+.head-card3:hover h3{
+  color: white;
+}
+
 
 .head-card4 {
     background-color: white;
@@ -236,6 +253,7 @@ nav img {
 .head-card4 h3 {
     font-size: 1.2rem;
     margin-bottom: .5rem;
+    color: darkblue;
 }
 
 .head-card4 p {
@@ -250,11 +268,15 @@ nav img {
     transform: scale(1.07);
     color: white;
 }
+.head-card4:hover h3{
+  color: white;
+}
 /* end////////////////////////////////////////////////////////////////////////// */
 
 
 /* service circle section /////////////////////////////////////////// */
-.container-s h2{ font-size: 3rem; color: #02a2c4; text-align: center;}
+.iq-features{background-color: rgb(218, 214, 214);}
+.container-s h2{ font-size: 3.2rem; color: rgb(1, 1, 138); text-align: center; font-weight: 500;}
 .container-s p{ font-size: 1rem; justify-self: center; text-align: center;}
 .holderCircle { width: 500px; height: 500px; border-radius: 100%; margin: 60px auto; position: relative; }
 
@@ -284,6 +306,8 @@ nav img {
   .title-box .title { font-weight: 600; letter-spacing: 2px; position: relative; z-index: -1; }
         .title-box span { text-shadow: 0 10px 10px rgba(0, 0, 0, .15); font-weight: 800; color: rgba(22, 22, 22, 0.87); }
         .title-box p {font-size: 17px; line-height: 2em; }
+
+        
 
 /*end /////////////////////////////////////////////////////////////////////// */
 
@@ -320,7 +344,9 @@ nav img {
 
 .services-text h1 {
     font-size: 3rem;
+    font-weight: 600;
     padding-bottom: 1rem;
+    color: darkblue;
 }
 
 .services-text p {
@@ -370,7 +396,9 @@ nav img {
     widows: 100%;
 }
 .services-card1-image h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: darkblue;
     gap: .5rem;
     align-self: center;
 }
@@ -395,6 +423,9 @@ nav img {
     transform: scale(1.05);
     color: white;
 }
+.services-card1:hover h3{
+color: white;  
+}
 
 
 .services-card2 {
@@ -418,7 +449,9 @@ nav img {
     widows: 100%;
 }
 .services-card2-image h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: darkblue;
     gap: .5rem;
     align-self: center;
 }
@@ -443,6 +476,9 @@ nav img {
     transform: scale(1.05);
     color: white;
 }
+.services-card3:hover h3{
+  color: white;  
+  }
 
 
 .services-card3 {
@@ -466,7 +502,9 @@ nav img {
     widows: 100%;
 }
 .services-card3-image h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: darkblue;
     gap: .5rem;
     align-self: center;
 }
@@ -491,6 +529,9 @@ nav img {
     transform: scale(1.05);
     color: white;
 }
+.services-card3:hover h3{
+  color: white;  
+  }
 
 .services-card4 {
     background-color: white;
@@ -513,7 +554,9 @@ nav img {
     widows: 100%;
 }
 .services-card4-image h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: darkblue;
     gap: .5rem;
     align-self: center;
 }
@@ -538,6 +581,9 @@ nav img {
     transform: scale(1.05);
     color: white;
 }
+.services-card4:hover h3{
+  color: white;  
+  }
 
 
 .services-card5 {
@@ -562,7 +608,9 @@ nav img {
     widows: 100%;
 }
 .services-card5-image h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: darkblue;
     gap: .5rem;
     align-self: center;
 }
@@ -587,6 +635,9 @@ nav img {
     transform: scale(1.05);
     color: white;
 }
+.services-card5:hover h3{
+  color: white;  
+  }
 
 
 
@@ -612,7 +663,9 @@ nav img {
     widows: 100%;
 }
 .services-card6-image h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: darkblue;
     gap: .5rem;
     align-self: center;
 }
@@ -637,6 +690,10 @@ nav img {
     transform: scale(1.05);
     color: white;
 }
+.services-card6:hover h3{
+  color: white;  
+  }
+
 /* end//////////////////////////////////////////////////// */
 
 
@@ -645,6 +702,7 @@ nav img {
 
 .main-call-section{
     margin-top: 5rem;
+    margin-bottom:3rem ;
     background-color: #15142f;
     /* background-color: #292929f1; */
     width: 100%;
@@ -712,15 +770,6 @@ nav img {
     background-image: linear-gradient(360deg, #4e95ed 19%, #03228f 100%);
    
 }
-/* .call-section h3{
-    position: fixed;
-} */
-
-/* .call-section-logo{
-    background-color: white;
-    border-radius: 50%;
-} */
-
 
 /* <!-- end////////////////////////////////////// --> *
 
@@ -728,11 +777,6 @@ nav img {
 
 /* counter bar////////////////////////////////////////////////// */
 
-.container-c {
-margin-top: 3rem;
-/* background-color: #15142f; */
-
-}
 .counter{
     color:#0092CD;
     background: linear-gradient(to right bottom,#fff 50%, #f9f9f9 51%);
@@ -781,15 +825,15 @@ margin-top: 3rem;
 
 #about-us-section {
     /* background-color: blue; */
-    margin-top: 6rem;
-    min-height: 80vh;
+    margin-top: 2rem;
+    min-height: 90vh;
     width: 100%;
 }
 
 .about-us {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    min-height: 80vh;
+    min-height: 90vh;
     width: 98%;
     /* background-color:#000060; */
     background-color: #15142f;
@@ -818,11 +862,13 @@ margin-top: 3rem;
 
 .about-us-text p {
     font-size: 1rem;
+    /* text-align: justify; */
 }
 
 .about-us-image {
+  padding: 1rem;
     display: flex;
-    /* justify-content: center; */
+    justify-content: end;
     align-items: center;
 }
 
@@ -839,7 +885,7 @@ margin-top: 3rem;
 
 #rs-portfolio{background-color: #15142f;}
 .sub-text-white-color{ color: white;}
-.title-white-color{color: #08c9f5;}
+.title-white-color{color: white;}
 .rs-project.style1 .owl-stage-outer {
     padding-bottom: 70px;
 
@@ -1907,9 +1953,10 @@ margin-top: 3rem;
   margin-bottom: 2rem;
 }
 .section-title {
-  font-size: 3.5rem;
+  font-size: 4rem;
+  font-family: 500;
   margin-top: 2rem;
-  color: #02c6f1;
+  color: rgb(9, 9, 122);
 }
 
 .team {
@@ -1970,14 +2017,15 @@ margin-top: 3rem;
 }
 
 .team__meta__title {
-  font-size: 24px;
+  font-size: 1.8rem;
+  font-family: 500;
   margin: 0;
 }
 
 .team__meta__designation {
   font-size: 16px;
-  color: #05d9ff;
-  font-weight: 400;
+  color: rgb(2, 2, 170);
+  font-weight: 500;
 }
 
 .team__details__summery {
@@ -2007,7 +2055,9 @@ margin-top: 3rem;
 }
 
 .social-icons a:hover {
-  color: #007bff; /* Change to your desired hover color */
+  color: #1100ff; 
+  text-decoration: none;
+ /* Change to your desired hover color */
 }
 
 /*end ///////////////////////////////////////////////////////// */
@@ -2068,7 +2118,7 @@ margin-bottom: 20px;
 }
 .testimonials .heading h2 span {
 font-weight: 300;
-color: #02a2c4;
+color: rgb(1, 1, 114);
 margin: 0;
 
 }
@@ -2077,7 +2127,7 @@ font-size: 20px;
 font-weight: 300;
 line-height: 26px;
 margin: 0;
-color: #727f8c;
+color: #181a1d;
 }
 .testimonials .box {
 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.212);
@@ -2138,6 +2188,7 @@ background: #02a2c4;
 /*end ////////////////////////////////////////////////////////////////////////////// */
 
 
+
 /* contact us section////////////////////////////////////// */
 .contact-us-section{
     min-height: 100vh;
@@ -2186,13 +2237,15 @@ background: #02a2c4;
 .contact-us-form-div input{
 height: 3rem;
 width: 90%;
-/* color: white; */
 background-color: transparent;
 border: none;
 border-bottom:2px solid black ;
 outline: none;
 margin-top: 2rem;
 }
+.contact-us-form-div input{
+  color: #000000;
+  }
 .contact-us-form-div button{
   height: 3rem;
   width: 40%;
@@ -2241,14 +2294,17 @@ margin-top: 2rem;
     height: 2rem;
     width: 2rem;
     padding-top: 2rem;
+    text-decoration: none;
 }   
 .contact-us-bar-div i:hover{
     color:  orange;
 }
 .contact-us-bar-div a{
     color: white;
-   font-size: 1.2rem;
+   font-size: 1.1rem;
+   text-decoration: none;
 }
+
 
 /* end///////////////////////////////////////////////////////////// */
 
@@ -2363,6 +2419,7 @@ background-color: transparent;
 border: none;
  border-bottom:2px solid black ;
 outline: none;
+color: #000000;
 margin-top: 2rem;
 }
 .contact1-us-form-div button{
@@ -2395,7 +2452,7 @@ margin-top: 2rem;
             .contact1-us-bar-div-fa a{
                 color: white;
                font-size: 1.1rem;
-               text-decoration: none;
+               /* text-decoration: none; */
             }
         
 
@@ -2414,7 +2471,7 @@ margin-top: 2rem;
             .contact1-us-bar-div-fa a{
                 color: white;
                font-size: .8rem;
-               text-decoration: none;
+               /* text-decoration: none; */
             }
             .contact1-us-form-div{
               
@@ -2444,7 +2501,7 @@ margin-top: 2rem;
             .contact1-us-bar-div-fa a{
                 color: white;
                font-size: .7rem;
-               text-decoration: none;
+               /* text-decoration: none; */
             }
             .contact1-us-form-div h2{
                 align-self: center;
@@ -2453,7 +2510,18 @@ margin-top: 2rem;
 
         }
 
-/* ///////////////////////////////////////////////////////////////////////////////////////////// */
+        /* 1250000000000000000000000000000000000000000000000000000000000000000000 */
+@media(max-width:1250px) {
+  .contact-us-section{
+      display: none;
+  }
+  .contact1-us-section{
+      display: block;
+  }
+}
+
+/* end///////////////////////////////////////////////////////////////////////////////////////////// */
+
 /* footer section///////////////////////////////////////////////////////////////////////// */
 
 #footer-section{
@@ -2498,6 +2566,9 @@ margin-top: 2rem;
 .footer-item1 i:hover{
   color: orange;
  }
+ .footer-item1 a:hover{
+  color: orange;
+ }
 
 .footer-item1 a{
     font-size: 1rem;
@@ -2526,6 +2597,7 @@ margin-top: 2rem;
  }
  .footer-links a:hover{
   text-decoration: none;
+  color: orange;
 
 }
  .footer-item3{
@@ -2554,7 +2626,7 @@ margin-top: 2rem;
  }
  .footer-item3-social-media a{
   text-decoration: none;
-  /* color: black; */
+  color: black;
 }
  .footer-item3-social-media i{
    font-size: 1.4rem;
@@ -2614,6 +2686,10 @@ margin-top: 2rem;
  .footer-item3-job i:hover{
  color: orange;
  }
+
+ .footer-item3-job a:hover{
+color: orange;
+ }
  .footer-item3-job a{
     font-size: 1rem;
     padding-left: .5rem;
@@ -2643,17 +2719,6 @@ margin-top: 2rem;
 
 
 
-
-
-/* 1250000000000000000000000000000000000000000000000000000000000000000000 */
-@media(max-width:1250px) {
-    .contact-us-section{
-        display: none;
-    }
-    .contact1-us-section{
-        display: block;
-    }
-}
 /* 9555555555555555555555555555555555555555555555555555555555555555555 */
 @media(max-width:950px) {
     nav img {
@@ -2745,6 +2810,10 @@ margin-top: 2rem;
    #services-section{
     display: flex;
 }
+.head-card1, .head-card2, .head-card3, .head-card4{height: 40vh;}
+.head-card1 h3, .head-card2 h3, .head-card3 h3, .head-card4 h3{font-size: 1.5rem; font-weight: 600;}
+
+.about-us-image{justify-content: center;}
 
 }
 
@@ -2765,7 +2834,7 @@ margin-top: 2rem;
 
     }
 .head-card-section{
-    min-height: 150vh;
+    min-height: 100vh;
 }
 
     .services-cards {
@@ -2793,9 +2862,6 @@ margin-top: 2rem;
     .services-text p {
         font-size: 1.3rem;
     }
-
-
-
 
 }
 

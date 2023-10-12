@@ -126,6 +126,8 @@ nav img {
 
 .who-we-are h2 {
     font-size: 5rem;
+    color: rgb(1, 1, 107);
+    font-family: 500;
 }
 .who-we-are p{
     font-size: 1.3rem;
@@ -226,6 +228,7 @@ background-color: transparent;
 border: none;
  border-bottom:2px solid black ;
 outline: none;
+color: black;
 margin-top: 2rem;
 }
 .contact-us-form-div button{
@@ -247,8 +250,10 @@ margin-top: 2rem;
 /* ///////////////////////////////////////////////////////////// */
 
 /* contact us section of mobile ////////////////////////////////////// */
+
+/* contact us section of mobile ////////////////////////////////////// */
 .contact1-us-section{
-    min-height: 110vh;
+    min-height: 100vh;
     width: 100%;
     background: linear-gradient(
         to right,
@@ -300,17 +305,15 @@ margin-top: 2rem;
     align-items: center;  
     /* background-color: rgb(66, 66, 66); */
     background-color: #15142f;
-    min-height: 30vh;
+    height: 30vh;
     width: 100%;
     color: white;
     padding: 2rem;
 }
 .contact1-us-bar-div-fa{
-    /* position: absolute; */
     display: flex;
     align-items: center;
-   
-    
+    /* justify-content: space-around; */
 }
 .contact1-us-bar-div h2{
     font-size: 3rem;
@@ -354,11 +357,12 @@ margin-top: 2rem;
 .contact1-us-form-div input{
 height: 3rem;
 width: 70%;
-/* color: white; */
+color: white;
 background-color: transparent;
 border: none;
  border-bottom:2px solid black ;
 outline: none;
+color: #000000;
 margin-top: 2rem;
 }
 .contact1-us-form-div button{
@@ -391,7 +395,7 @@ margin-top: 2rem;
             .contact1-us-bar-div-fa a{
                 color: white;
                font-size: 1.1rem;
-               text-decoration: none;
+               /* text-decoration: none; */
             }
         
 
@@ -410,7 +414,7 @@ margin-top: 2rem;
             .contact1-us-bar-div-fa a{
                 color: white;
                font-size: .8rem;
-               text-decoration: none;
+               /* text-decoration: none; */
             }
             .contact1-us-form-div{
               
@@ -439,18 +443,17 @@ margin-top: 2rem;
           
             .contact1-us-bar-div-fa a{
                 color: white;
-               font-size: .9rem;
-               text-decoration: none;
+                padding-right: 1rem;
+               font-size: .7rem;
+               /* text-decoration: none; */
             }
             .contact1-us-form-div h2{
                 align-self: center;
                 font-size: 1.4rem;
             }
-            .contact1-us-bar-location a{
-                font-size: .8rem;
-            }
 
         }
+
         /* 1250000000000000000000000000000000000000000000000000000000000000000000 */
 @media(max-width:1250px) {
     .contact-us-section{
@@ -461,7 +464,7 @@ margin-top: 2rem;
     }
 }
 
-/* ///////////////////////////////////////////////////////////////////////////////////////////// */
+/* end///////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* map////////////////////////////////////////////////////////////////// */
 #map-section{
@@ -473,8 +476,7 @@ iframe{
     height:100%;
     width: 100%;
 }
-/* ///////////////////////////////////////////////////////////////////////// */
-
+/*end ///////////////////////////////////////////////////////////////////////// */
 
 
 
@@ -488,6 +490,7 @@ iframe{
       align-items: center;
       min-height: 60vh;
       width: 100%;
+      /* margin-top: 2rem; */
   }
   .footer{
       /* background-color: rgb(58, 58, 58); */
@@ -521,6 +524,9 @@ iframe{
   .footer-item1 i:hover{
     color: orange;
    }
+   .footer-item1 a:hover{
+    color: orange;
+   }
   
   .footer-item1 a{
       font-size: 1rem;
@@ -547,6 +553,11 @@ iframe{
       font-weight: 400;
       color: white;
    }
+   .footer-links a:hover{
+    text-decoration: none;
+    color: orange;
+  
+  }
    .footer-item3{
       display: flex;
       flex-direction: column;
@@ -571,7 +582,10 @@ iframe{
       display: flex;
       justify-content: space-around;
    }
-  
+   .footer-item3-social-media a{
+    text-decoration: none;
+    color: black;
+  }
    .footer-item3-social-media i{
      font-size: 1.4rem;
    }
@@ -630,6 +644,8 @@ iframe{
    .footer-item3-job i:hover{
    color: orange;
    }
+   .footer-item3-job a:hover{color: orange;
+}
    .footer-item3-job a{
       font-size: 1rem;
       padding-left: .5rem;
@@ -650,7 +666,6 @@ iframe{
    /* media end//////////////////////////////////////////////////// */
   
    /* footer section end//////////////////////////////////////////////////////////////////////////////////////// */
-
 
 
 
