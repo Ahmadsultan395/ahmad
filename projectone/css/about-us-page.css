@@ -64,20 +64,38 @@ nav img {
 }
 
 #menu a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: black;
-}
-
-#menu a:hover {
-    font-size: 1.9rem;
-    transition: .3s;
-    text-shadow: .3px .3px 3px white;
-    /* box-shadow: 3px 3px 10px black; */
-
-}
-
+    position: relative;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: black;
+      list-style: none;
+  }
+  #menu a:after{
+  content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -4px;
+    left: 0;
+    background-color: orange;
+    transform-origin: bottom right;
+    transition: transform .5s ease-out;
+  }
+  #menu a:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  }
+    #menu a:hover {
+     font-weight: 500;
+     /* font-size: 1.3rem; */
+      color: rgb(1, 1, 177);
+      transition: .5s;
+      text-shadow: .3px .3px 3px white; 
+      /* box-shadow: 3px 3px 10px black; */
+  
+  } 
 
 /* head section//////////////////////////////////// */
 
@@ -123,7 +141,8 @@ nav img {
 }
 
 .who-we-are h2 {
-    font-size: 5rem;
+    font-size: 4rem;
+    color: darkblue;
 }
 /* //////////// */
 
@@ -180,6 +199,7 @@ nav img {
     font-size: 1.2rem;
     align-self: flex-start;
     padding-bottom: 0.3rem;
+    color: darkblue;
 }
 
 .about-section-text h2 {
@@ -198,6 +218,9 @@ nav img {
     font-weight: 700;
     text-decoration: none;
     padding: 1.5rem 0rem 2rem 0rem;
+}
+.about-section-mail a{
+    color: darkblue;
 }
 
 .about-section-text button {
@@ -262,6 +285,9 @@ color: white;
   .footer-item1 i:hover{
     color: orange;
    }
+   .footer-item1 a:hover{
+    color: orange;
+   }
   
   .footer-item1 a{
       font-size: 1rem;
@@ -290,8 +316,9 @@ color: white;
    }
    .footer-links a:hover{
     text-decoration: none;
-
- }
+    color: orange;
+  
+  }
    .footer-item3{
       display: flex;
       flex-direction: column;
@@ -318,8 +345,8 @@ color: white;
    }
    .footer-item3-social-media a{
     text-decoration: none;
-    /* color: black; */
- }
+    color: black;
+  }
    .footer-item3-social-media i{
      font-size: 1.4rem;
    }
@@ -378,6 +405,10 @@ color: white;
    .footer-item3-job i:hover{
    color: orange;
    }
+  
+   .footer-item3-job a:hover{
+  color: orange;
+   }
    .footer-item3-job a{
       font-size: 1rem;
       padding-left: .5rem;
@@ -398,36 +429,6 @@ color: white;
    /* media end//////////////////////////////////////////////////// */
   
    /* footer section end//////////////////////////////////////////////////////////////////////////////////////// */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

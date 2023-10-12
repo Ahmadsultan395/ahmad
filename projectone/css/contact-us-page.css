@@ -64,19 +64,38 @@ nav img {
 }
 
 #menu a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: black;
-}
-
-#menu a:hover {
-    font-size: 1.9rem;
-    transition: .3s;
-    text-shadow: .3px .3px 3px white;
-    /* box-shadow: 3px 3px 10px black; */
-
-}
+    position: relative;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: black;
+      list-style: none;
+  }
+  #menu a:after{
+  content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -4px;
+    left: 0;
+    background-color: orange;
+    transform-origin: bottom right;
+    transition: transform .5s ease-out;
+  }
+  #menu a:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  }
+    #menu a:hover {
+     font-weight: 500;
+     /* font-size: 1.3rem; */
+      color: rgb(1, 1, 177);
+      transition: .5s;
+      text-shadow: .3px .3px 3px white; 
+      /* box-shadow: 3px 3px 10px black; */
+  
+  } 
 
 
 /* head section//////////////////////////////////// */

@@ -26,6 +26,7 @@ body {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    background-color: rgb(212, 211, 211);
 }
 
 html {
@@ -81,19 +82,38 @@ nav img {
 }
 
 #menu a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: black;
-}
-
-#menu a:hover {
-    font-size: 1.9rem;
-    transition: .3s;
-    text-shadow: .3px .3px 3px white;
-    /* box-shadow: 3px 3px 10px black; */
-
-}
+    position: relative;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: black;
+      list-style: none;
+  }
+  #menu a:after{
+  content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -4px;
+    left: 0;
+    background-color: orange;
+    transform-origin: bottom right;
+    transition: transform .5s ease-out;
+  }
+  #menu a:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  }
+    #menu a:hover {
+     font-weight: 500;
+     /* font-size: 1.3rem; */
+      color: rgb(1, 1, 177);
+      transition: .5s;
+      text-shadow: .3px .3px 3px white; 
+      /* box-shadow: 3px 3px 10px black; */
+  
+  } 
 
 
 /* head section//////////////////////////////////// */
@@ -108,7 +128,7 @@ nav img {
     /* margin-bottom: 5rem; */
 }
 
-.head-text {
+/* .head-text {
     min-height: 40ch;
     width: 100%;
     display: flex;
@@ -125,13 +145,18 @@ nav img {
 
 .head-text p {
     font-size: 1.5rem;
-}
+} */
 
 /* ////////////////////////////////////////////////////// */
+
 /* team////////////////////////////////////////// */
 
+.vcenter{
+    background-color: rgb(212, 211, 211);
+  }
 .section {
     text-align: center;
+    padding: 2rem;
 }
 
 .section-header {
@@ -139,14 +164,16 @@ nav img {
 }
 .section-header p{
     font-size: 1rem;
+    font-weight: 450;
     padding-top: 2rem;
     margin-bottom: 2rem;
-}
+  }
 .section-title {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    font-family: 500;
     margin-top: 2rem;
-    color: #02c6f1;
-}
+    color: rgb(9, 9, 122);
+  }
 
 .team {
     list-style: none;
@@ -170,9 +197,11 @@ nav img {
 }
 
 .team__members:hover {
-    transform: translateY(-10px) rotateY(10deg);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
+    transform: translateY(-15px) rotateY(15deg);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+    background-color: orange;
+    color: white;
+  }
 
 .userProfile {
     text-align: center;
@@ -210,8 +239,9 @@ nav img {
 
 .team__meta__designation {
     font-size: 16px;
-    color: #777;
-}
+    color: rgb(2, 2, 170);
+    font-weight: 500;
+  }
 
 .team__details__summery {
     font-size: 16px;
@@ -232,7 +262,7 @@ nav img {
     font-size: 20px;
     margin: 0 10px;
     transition: color 0.3s ease-in-out;
-}
+  }
 
 .team__members:hover .social-icons {
     opacity: 1;
@@ -240,10 +270,10 @@ nav img {
 }
 
 .social-icons a:hover {
-    color: #007bff; /* Change to your desired hover color */
-}
-
-
+    color: #1100ff; 
+    text-decoration: none;
+   /* Change to your desired hover color */
+  }
 
 
 /* ///////////////////////////////////////////////////////// */
@@ -258,7 +288,7 @@ nav img {
       align-items: center;
       min-height: 60vh;
       width: 100%;
-      margin-top: 2rem;
+      /* margin-top: 2rem; */
   }
   .footer{
       /* background-color: rgb(58, 58, 58); */
@@ -292,6 +322,9 @@ nav img {
   .footer-item1 i:hover{
     color: orange;
    }
+   .footer-item1 a:hover{
+    color: orange;
+   }
   
   .footer-item1 a{
       font-size: 1rem;
@@ -320,8 +353,9 @@ nav img {
    }
    .footer-links a:hover{
     text-decoration: none;
-
- }
+    color: orange;
+  
+  }
    .footer-item3{
       display: flex;
       flex-direction: column;
@@ -348,8 +382,8 @@ nav img {
    }
    .footer-item3-social-media a{
     text-decoration: none;
-    /* color: black; */
- }
+    color: black;
+  }
    .footer-item3-social-media i{
      font-size: 1.4rem;
    }
@@ -407,6 +441,10 @@ nav img {
    }
    .footer-item3-job i:hover{
    color: orange;
+   }
+  
+   .footer-item3-job a:hover{
+  color: orange;
    }
    .footer-item3-job a{
       font-size: 1rem;
