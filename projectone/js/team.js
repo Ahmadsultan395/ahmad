@@ -1,26 +1,16 @@
-
-
-
-
-
-
-//////////////////////////////////////////////////////////////////////////////
-
 const hamburger=document.getElementById('hamburger');
-const navbar=document.getElementById('navbar');
+const menu =document.getElementById('menu');
 
 
 
 hamburger.addEventListener('click',function(){
-        if(!navbar.style.display){
-            navbar.style.display='flex'
+        if(!menu.style.display){
+            menu.style.display='flex'
             // hamburger.textContent='hide'
         }
         else{   
-            navbar.style.display=''
+            menu.style.display=''
             // hamburger.textContent='show'
         }
     });
     
-
-///////////////////////////////////////////////
