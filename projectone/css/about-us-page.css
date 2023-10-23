@@ -53,7 +53,11 @@ html{
   top: 0%;
   right: 0%;
 }
-
+a:is(:link, :active, :visited).active {
+  color: red;
+  background-color: orange;
+  padding: .5rem 1rem;
+}
 nav img {
   height: 12rem;
   width: 12rem;
@@ -108,7 +112,7 @@ transform-origin: bottom left;
 /* head section//////////////////////////////////// */
 
 #head-section {
-    background-image: url("../images/about/comppress-about-us.jpg");
+    background-image: url("../images/about/copmpress-about.jpg");
     min-height: 50vh;
     width: 100%;
     background-position: center;
@@ -498,6 +502,16 @@ padding-top: 3rem;
 
 /* merdia quary/////////////////////////////////////////////////////////////////////////// */
 
+
+/* 105000000000000000000000000000000000000000 */
+@media(max-width:1050px) {
+  
+  #menu a {
+    font-size: .9rem;
+    font-weight: 500;
+  }
+  
+  }
 /* 900000000000000000000000000000000000000000000000000000000000000000000000 */
 @media(max-width:850px) {
     nav img{

@@ -1,9 +1,9 @@
-/* * {
+ *{
     padding: 0%;
     margin: 0%;
     text-decoration: none;
     box-sizing: border-box;
-}
+} 
 /* body */
 body {
   margin: 0%;
@@ -34,6 +34,7 @@ html{
 #hamburger img{
   height: 2rem;
   width: 1.5rem;
+  border: none;
 }
 /* end */
 
@@ -52,6 +53,11 @@ html{
   left: 0%;
   top: 0%;
   right: 0%;
+}
+a:is(:link, :active, :visited).active {
+  color: red;
+  background-color: orange;
+  padding: .5rem 1rem;
 }
 nav img {
   height: 12rem;
@@ -106,7 +112,7 @@ transform-origin: bottom left;
 
 /* head section//////////////////////////////////// */
 #head-section {
-  background-image: url("../images/team/compres-our-team.jpg");
+  background-image: url("../images/team/compress-team.jpg");
   min-height: 50vh;
   width: 100%;
   background-position: center;
@@ -530,6 +536,17 @@ padding-top: 3rem;
 
 /* merdia quary/////////////////////////////////////////////////////////////////////////// */
 
+
+/* 105000000000000000000000000000000000000000 */
+@media(max-width:1050px) {
+  
+  #menu a {
+    font-size: .9rem;
+    font-weight: 500;
+  }
+  
+  }
+
 /* 900000000000000000000000000000000000000000000000000000000000000000000000 */
 @media(max-width:850px) {
   nav img {
@@ -586,6 +603,7 @@ padding-top: 3rem;
   button#hamburger {
     display: flex;
     z-index: 99;
+    border: none;
   }
 
   /* #navbar {
