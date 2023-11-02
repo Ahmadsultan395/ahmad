@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="control-keys.css">
+    <title>control keys function</title>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+    
+
+
+
+
+    <script>
+        var taget = document.querySelector("#box");
+//         taget.addEventListener('click',function(i){
+//             console.clear();
+// // cntrol
+//             // var cntrl = i.ctrlKey;
+//             // // console.log(cntrl);
+//             // if (cntrl) {
+//             //     console.log("this is control key ");
+//             // } else {
+//             //     console.log("this not is control key ");
+//             // }
+
+//             // // sift/
+//             // var shft = i.shiftKey;
+//             // // console.log(cntrl);
+//             // if (shft) {
+//             //     console.log("this is shift key ");
+//             // } else {
+//             //     console.log("this not is shift key ");
+//             // }
+
+//             // alt
+//             var at = i.altKey;
+//             // console.log(cntrl);
+//             if (at) {
+//                 console.log("this is alt key ");
+//             } else {
+//                 console.log("this not is alt key ");
+//             }
+
+//             // // meta window
+//             // var wind = i.metaKey;
+//             // // console.log(cntrl);
+//             // if (wind) {
+//             //     console.log("this is window key ");
+//             // } else {
+//             //     console.log("this not is window key ");
+//             // }
+//         })
+
+        taget.addEventListener("mousedown",function(e){
+            console.clear();
+            var checkey = e.button;
+            // console.log(checkey);
+            switch (checkey) {
+                case 0:
+                    taget.style.background="green";
+                    break;
+
+                    case 1:
+                    taget.style.background="red";
+                    break;
+
+                    case 2:
+                    taget.style.background="yellow";
+                    break;
+            
+                default:
+                   document.write("pres valid key");
+                    break;
+            }
+        })
+    </script>
+</body>
+</html>

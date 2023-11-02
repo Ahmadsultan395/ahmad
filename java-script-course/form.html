@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+
+<body>
+<div id="interval" >
+</div>
+<button   > stop</button>
+
+
+<br><br><br>
+    <form action=""  class="reg-form" onsubmit="submitfunction()">
+        <label for="">Name<input type="text" placeholder="Enter your name" id="fullname" onfocus="focusfunction(this)" onblur="bluefunction(this)" oninput="inputfunction(this)" oninvalid="alert('enter a valid name')" required></label><br>
+     
+        <label for=""> Email<input type="email" placeholder="Enter your class" id="class" onfocus="focusfunction(this)" onblur="bluefunction(this)" oninput="inputfunction(this)" required></label><br>
+        <label for="">Country
+            <select name="text" id="country" onfocus="focusfunction(this)" onblur="bluefunction(this)" onchange="changefunction(this)" required>
+                <option value="pakistan">pakistan</option>
+                <option value="india">india</option>
+                <option value="iran">iran </option>
+            </select>
+        </label>
+        <div id="test" style="border: 2px solid red; height: 1.7rem; width: 6%; margin-left: 3.4rem;"></div>
+        <br>
+        <label for="">new <input type="text" placeholder="age" id="ages" onfocus="main(this)" onblur="bluefunction(this)"  required></label>
+        <input type="submit">
+    </form>
+
+
+
+
+    <script>
+      
+function focusfunction(element){
+    element.style.background="green";
+    element.style.color="white";
+}
+function bluefunction(element){
+element.style.background="white";
+element.style.color="black";
+}
+function inputfunction(element){
+   var a = element.value;
+    document.querySelector("#test").innerHTML=a;
+}
+function changefunction(element){
+var a =element.value;
+document.querySelector("#test").innerHTML=a;
+}
+
+function submitfunction(){
+alert("your form is sucessfully submitted");
+}
+    </script>
+    <script src="form.js"></script>
+</body>
+
+</html>

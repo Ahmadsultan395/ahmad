@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .slider-container {
+        width: 100%;
+        /* border: 2px solid red; */
+        overflow: hidden;
+        box-shadow: 5px 5px 10px black;
+    }
+
+    .slider {
+        display: flex;
+        transition: 1s ease-in-out;    
+    }
+
+    .slides {
+        flex: 0 0 100%;
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+       
+    }
+
+    /* .silder-control {
+        position: absolute;
+        bottom: 30%;
+        left: 35%;
+        transform: translateX(-50%);
+    } */
+    .preslide{
+        height: 4rem;
+        width: 4rem;
+        position: absolute;
+        left: 2%;
+        top: 30%;
+        /* transform: translateY(50%); */
+        background-color: transparent;
+        border: none;
+        color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    }
+    .preslide:hover{
+        background-color: rgba(255, 255, 255, 0.225);
+        border-radius: 50%;
+        
+    }
+    .nextslide{
+        height: 4rem;
+        width: 4rem;
+        position: absolute;
+        right: 2%;
+        top: 30%;
+        /* transform: translateY(50%); */
+        background-color: transparent;
+        border: none;
+        color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    }
+    .nextslide:hover{
+        background-color: rgba(255, 255, 255, 0.225);
+        border-radius: 50%;
+        
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image silder in javascript</title>
+</head>
+
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slides active" style="background-image: url(./study3.jpg);"></div>
+            <div class="slides" style="background-image: url(./study4.jpg);"></div>
+            <div class="slides" style="background-image: url(./study55.jpg);"></div>
+        </div>
+    </div>
+    <div class="silder-control">
+        <button class="preslide"> < </button>
+        <button class="nextslide"> > </button>
+    </div>
+
+
+
+    <script>
+
+// const slider = document.querySelector(".slider");
+//   const slides = document.querySelectorAll(".slides");
+//   const prevBtn = document.querySelector(".preslide");
+//   const nextBtn = document.querySelector(".nextslide");
+
+//   let slideIndex = 0
+
+//   slides[slideIndex].classList.add('active');
+
+//   prevBtn.addEventListener('click', prevSlide);
+//   nextBtn.addEventListener('click', nextSlide);
+
+//   function prevSlide() {
+    // slides[slideIndex].classList.remove('active');
+
+    // slideIndex = (slideIndex === 0) ? slides.length - 1 : slideIndex - 1;
+    // slides[slideIndex].classList.add('active');
+    // slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+//   }
+
+//   function nextSlide() {
+    // slides[slideIndex].classList.remove('active');
+
+    // slideIndex = (slideIndex === slides.length - 1) ? 0 : slideIndex + 1;
+    // slides[slideIndex].classList.add('active');
+    // slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+//   }
+
+
+        // =====================
+        
+        let slider = document.querySelector(".slider");
+        let slides = document.querySelectorAll(".slides");
+        let prebtn = document.querySelector(".preslide");
+        let nextbtn = document.querySelector(".nextslide");
+
+        var slidesnum = 0;
+        slides[slidesnum].classList.add("active");
+
+        nextbtn.addEventListener('click', next);
+        function next(){
+            slides[slidesnum].classList.remove("active");
+
+            slidesnum = (slidesnum === slides.length - 1) ? 0 : slidesnum + 1;
+            slides[slidesnum].classList.add("active");
+
+
+            slider.style.transform = `translateX(-${slidesnum * 100}%)`;
+            // slider.style.transform = `translateX(-${slidesnum * 100}%)`;
+        
+        }
+
+        prebtn.addEventListener('click', function () {
+            slides[slidesnum].classList.remove("active");
+            slidesnum = (slidesnum === 0) ? slides.length - 1 : slidesnum - 1;
+            slides[slidesnum].classList.add("active");
+            slider.style.transform = `translateX(-${slidesnum * 100}%)`;
+        })
+
+
+    </script>
+</body>
+
+</html>

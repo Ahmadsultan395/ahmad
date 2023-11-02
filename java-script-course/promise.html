@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promises page </title>
+</head>
+
+<body>
+    <h1>promises page</h1>
+    <form action="" id="form">
+        name<input type="text" name="" id="nametext"><br>
+        username<input type="text" name="" id="usertext"><br>
+        comment<input type="text" name="" id="commenttext"><br>
+        <button type="submit" id="savebtn" onclick="savedata()">submit</button>
+    </form>
+    <script>
+        // var complete= false;
+        // function prom(a,b){
+
+        // return new Promise(function(resolve,reject){
+        // console.log("please eait untill your result loaded..............")
+        // var c= a/b;
+        // setTimeout(() => {
+        //     if(a,b){
+        // resolve( ` your answer is ${c}`);
+        // }
+        // else{
+        //     reject(" failed to calculate");
+        // }
+        // }, 3000);
+
+        // })
+        // }
+        // // one way==========================
+        // // let onfulfilment = (result) =>{
+        // //     console.log(result)
+        // // }
+        // // let onrejection = (error) =>{
+        // //     console.log(error)
+        // // }
+        // //  prom(true).then(onfulfilment).catch(onrejection);
+        // // 2second way===========================
+        //  prom(10,0).then((result)=>{console.log(result)}).catch((error)=>{console.log(error)});
+
+
+        //  let p1 = new Promise((resolve,reject)=>{
+        //     setTimeout(() => {
+        //         console.log('this function takle few sec to run.........');
+        //         resolve(10);
+        //     }, 1*1000);
+        //  })
+        //  let p2 = new Promise((resolve,reject)=>{
+        //     setTimeout(() => {
+        //         console.log('this function takle few sec to run.........');
+        //         resolve(20);
+        //     }, 2*1000);
+        //  })
+        //  let p3 = new Promise((resolve,reject)=>{
+        //     setTimeout(() => {
+        //         console.log('this function takle few sec to run.........');
+        //         resolve(30);
+        //     }, 3*1000);
+        //  })
+
+        //  var total=0;
+        // Promise.all([p1,p2,p3]).then((result)=>{
+        //     for (let i in result){ total+=result[i];  }
+        //         console.log(result);
+        //         console.log(total);   
+        //     }
+        // ).catch((error)=>{
+        //     console.log(error);
+        // });
+
+        // fetching data =======================
+        // fetch("promise.json")
+        // .then((response)=>{  return response.json();})
+        // .then((data)=>{ 
+        // console.log(data);
+        //      for (const i in data) {
+        //         document.write(`${data[i].name} - ${data[i].age} - ${data[i].city} <br>`)
+        //     }
+        // })
+        // .catch((error)=>{  console.log("failed to upload")});
+
+        // fetch data from server=================
+        //         document.querySelector("#savebtn").addEventListener('click', function (e) {
+        //             e.preventDefault();
+        //             fetch('https://jsonplaceholder.typicode.com/posts', {
+        //                 method: 'POST',
+        //                 body: JSON.stringify(objt),
+        //                 headers: {
+        //                     'Content-type': 'application/x-www-form-urlencoded',
+        //                 },
+        //             })
+        //                 .then((response) => response.json())
+        //                 .then((json) => console.log(json));
+        //         })
+
+        // var objt ={
+        //     title: 'nametext',
+        //     body: 'usertext',
+        //     userId: 'commenttext',
+        //   }
+
+
+        // // async==============================
+        // async function ten() {
+        //     try{
+        //         let file = await fetch("./promise.json");
+        //     let b = await file.json();
+        //     return b;
+        //     }
+        //     catch{
+        //         console.log("its show and error");
+        //     }
+        // }
+
+
+        // ten().then((result)=>{
+        //     console.log(result);
+        //     for (const i in result) {
+        //        document.write(`${result[i].name }-${result[i].age}-${result[i].city } <br>`);
+        //     } 
+
+        //     document.write(result);
+
+        // });
+        //   error handingggggggggggggggggggggggggggggggggggggggg
+
+        let json = '{"name":"ahmad sultan","age":"23"}';
+        let a = JSON.parse(json);
+        try {
+            if(!a.name){
+                throw new Error('not found');
+            }
+            console.log(a.name);
+            console.log(a.age);
+        }
+        catch(error) {
+            console.log(error);
+        }finally{
+            console.log("code is running")
+        }
+
+
+    </script>
+</body>
+
+</html>

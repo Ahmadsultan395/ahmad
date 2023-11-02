@@ -1,0 +1,35 @@
+#header{
+    background-color: red;
+    height: 30vh;
+    width: 100%;
+
+}
+.ahmad{
+    height: 50vh;
+    width: 50%;
+    background-color: aqua;
+}
+#inner {
+    background-color: pink;
+    height: 10vh;
+    width: 50%;
+}
+#ultag{
+    /* display: none; */
+    background-color: aqua;
+    height: 40vh;
+    width: 100%;
+}
+
+ .tag1{
+   
+    background-color:pink;
+    height: 20vh;
+    width: 100%;
+} 
+.text{
+    background-color: blueviolet;
+}
+.abcd {
+    background-color: aqua;
+}

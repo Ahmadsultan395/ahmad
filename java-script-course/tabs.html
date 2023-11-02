@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabs using javascript</title>
+</head>
+<style>
+    * {
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .tabs {
+        /* background-color: lightblue; */
+        width: 50%;
+    }
+    .btnlinks{
+        height: 2rem;
+        width: 6rem;
+        background-color: lightblue;font-size: 1rem;
+        font-weight: 600;
+    }
+    .btnlinks.active{
+        height: 2rem;
+        width: 6rem;
+        background:white;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .tabcontent{
+        background-color: white;
+        padding: 1rem;
+        width: 50%;
+        margin-bottom: .5rem;
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="tabs">
+        <button class="btnlinks" data-tab="tab1">TAB 1</button>
+        <button class="btnlinks" data-tab="tab2">TAB 2</button>
+        <button class="btnlinks" data-tab="tab3">TAB 3</button>
+    </div>
+    <div id="tab1" class="tabcontent">
+        <h3>heading one</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam tempore blanditiis mollitia debitis,
+            exercitationem doloremque fugiat, perspiciatis quia nulla quidem molestias deserunt aspernatur labore
+            consequatur. Minus ipsam nemo autem minima?</p>
+    </div>
+    <div id="tab2" class="tabcontent">
+        <h3>heading two</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam tempore blanditiis mollitia debitis,
+            exercitationem doloremque fugiat, perspiciatis quia nulla quidem molestias deserunt aspernatur labore
+            consequatur. Minus ipsam nemo autem minima?</p>
+    </div>
+    <div id="tab3" class="tabcontent">
+        <h3>heading three</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam tempore blanditiis mollitia debitis,
+            exercitationem doloremque fugiat, perspiciatis quia nulla quidem molestias deserunt aspernatur labore
+            consequatur. Minus ipsam nemo autem minima?</p>
+    </div>
+
+
+
+
+    <script>
+        let buttons = document.querySelectorAll(".btnlinks");
+
+        for(let i=0; i < buttons.length; i++){
+            buttons[i].addEventListener("click",function(){
+                var tabname= this.dataset.tab;
+                var contentname = document.getElementById(tabname);
+                let allbuttons = document.querySelectorAll(".btnlinks");
+                let allcontent = document.querySelectorAll(".tabcontent");
+
+
+                for(let k=0; k < allcontent.length; k++){
+                    allcontent[k].style.display="none";
+                }
+
+                for(let j=0; j < allbuttons.length; j++){
+                    allbuttons[j].classList.remove("active");
+                }
+            contentname.style.display="block";
+               this.classList.add("active");
+            
+            })
+        }
+        document.querySelector(".btnlinks").click();
+
+// =================
+// var tabButtons = document.querySelectorAll(".btnlinks");
+
+//     for (var i = 0; i < tabButtons.length; i++) {
+//       tabButtons[i].addEventListener("click", function () {
+//         var tabName = this.dataset.tab;
+//         var tabContent = document.getElementById(tabName);
+//         var allTabContent = document.querySelectorAll(".tabcontent");
+//         var allTabButtons = document.querySelectorAll(".btnlinks");
+
+//         for (var j = 0; j < allTabContent.length; j++) {
+//           allTabContent[j].style.display = "none";
+//         }
+
+//         for (var k = 0; k < allTabButtons.length; k++) {
+//           allTabButtons[k].classList.remove("active");
+//         }
+
+//         tabContent.style.display = "block";
+//         this.classList.add("active");
+//       });
+//     }
+
+//     document.querySelector(".btnlinks").click();
+
+    </script>
+</body>
+
+</html>

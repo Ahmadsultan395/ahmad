@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="advance.css">
+    <title>template string </title>
+</head>
+<body>
+    <h1>this is advance javascript page</h1>
+    <button onclick="show()" id="btn">click</button>
+    
+
+
+    <script>
+        var a ="ahmad sultan";
+        var c = "23";
+        // var b = ("helo "+a);
+        // document.write(b);
+        // var b=(`hello ${a} your professional batch number is ${c}`);
+        // document.write(b);
+    function stringfunction(a,c){
+        return ` helo ${a} your age is  ${c}`;
+        };
+    //    var d= stringfunction(a,c);
+       console.log(stringfunction(a,c));
+       var button = document.querySelector("#btn");
+      var show = () => {
+        button.classList.toggle("btn1");
+    // button.style.background='red';
+    // button.style.fontSize='2rem';
+    // button.style.height='4rem';
+    // button.style.width='8rem';
+    // button.style.padding='1rem';
+    // button.style.border='none';
+    // button.style.borderRadius='4rem';
+    // button.style.boxShadow='4px 4px 20px black';
+ }
+show();
+// console.log(a);
+    </script>
+    <script src="advance.js"></script>
+
+</body>
+</html>

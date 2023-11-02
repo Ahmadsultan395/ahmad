@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>According</title>
+    <style>
+        .according {
+            border: 2px solid black;
+            min-height: 30vh;
+            width: 50%;
+        }
+
+        .accoring-item {
+            margin-bottom: 1rem;
+        }
+
+        .according-tittle {
+            background-color: brown;
+            font-size: 1.4rem;
+            padding: .4rem;
+        }
+
+        .according-content {
+            padding: .4rem;
+            background-color: rgb(189, 189, 145);
+            display: none;
+        }
+
+        .accoring-item.active .according-content {
+            display: block;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="according">
+        <div class="accoring-item">
+            <div class="according-tittle">According item 1</div>
+            <div class="according-content">Accoring heading 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis sequi magnam ad deserunt voluptatibus non voluptate molestias nam! Ad, minus. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Sapiente, debitis?
+            </div>
+        </div>
+        <div class="accoring-item">
+            <div class="according-tittle">According item 2</div>
+            <div class="according-content">Accoring heading 2 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis sequi magnam ad deserunt voluptatibus non voluptate molestias nam! Ad, minus. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Sapiente, debitis?
+            </div>
+        </div>
+        <div class="accoring-item">
+            <div class="according-tittle">According item 3</div>
+            <div class="according-content">Accoring heading 3 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis sequi magnam ad deserunt voluptatibus non voluptate molestias nam! Ad, minus. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Sapiente, debitis?
+            </div>
+        </div>
+        <div class="accoring-item">
+            <div class="according-tittle">According item 4</div>
+            <div class="according-content">Accoring heading 4 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis sequi magnam ad deserunt voluptatibus non voluptate molestias nam! Ad, minus. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Sapiente, debitis?
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- javascript  -->
+    <script>
+      const accordingItem = document.querySelectorAll(".accoring-item");
+       accordingItem.forEach(item=>{
+        const title = item.querySelector(".according-tittle");
+        const content =item.querySelector(".according-content");
+
+        title.addEventListener('click',()=>{
+            for(let i=0; i < accordingItem.length; i++){
+                if (accordingItem[i] != item) {
+                    accordingItem[i].classList.remove('active');
+                } else {
+                    item.classList.toggle("active");
+                }
+            }
+            // item.classList.toggle("active");
+        })
+       })
+
+
+    </script>
+</body>
+
+</html>
