@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jQuery.js"></script>
+
+    <style>
+        .box{
+height: 20vh;
+width: 40%;
+background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>this is j-query page </h1>
+    <ul class="list">
+        <li class="listName">ahmad</li>
+        <li class="listName">ali</li>
+        <li class="listName">hasssan</li>
+        <li class="listName">tabish</li>
+        <li class="listName">imran</li>
+    </ul>
+    <div class="box">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque eveniet earum illum eos, facere non animi neque.
+        Quam, sint officia!
+    </div>
+    <button class="removeEvent">remove event</button>
+    <button class="append">append</button>
+    <button class="prepend">prepend</button>
+    <button class="after">after</button>
+    <button class="before">before</button>
+    <button class="empty">empty</button>
+    <button class="remove">remove</button>
+    <script>
+        $(document).ready(function () {
+            $('ul li:lt(4)').css('border', '1px solid red');
+
+            // $('.box').click(function(){
+            //     $('.box').css('background-color','green');
+            // })
+            // $('.box').mouseover(function(){
+            //     $('.box').css('background-color','red');
+            //     $('.box').css('transform','scale(1.5)');
+            //     // transform: scale(1.5);
+            // })
+            // on method
+            $('.box').on({
+                "click": (function(){
+                $('.box').css('background-color','green');
+            }),
+            "mouseover" :(function(){
+                $('.box').css('background-color','red');
+                $('.box').css('transform','scale(1.5)');
+                // transform: scale(1.5);
+            })
+            })
+// off method
+$('.removeEvent').click (function(){
+    $('.box').off("click mouseover");
+})
+
+            $('.box').click(function(){
+               console.log($('.box').html()); 
+            })
+
+             $('body').keypress(function(){
+              $(this).css('background','orange');
+            })
+            $('body').keyup(function(){
+              $(this).css('background','red');
+            })
+            $('body').keydown(function(){
+              $(this).css('background','pink');
+            })
+        });
+// append prepend
+$('.append').click(function(){
+    $('.box').append("<h2>ahmadsultan</h2>");
+})
+$('.prepend').click(function(){
+    $('.box').prepend("<h2>welcome</h2>");
+})
+
+// after and bdfore
+$('.after').click(function(){
+    $('.box').after("<h2>ahmadsultan</h2>");
+})
+$('.before').click(function(){
+    $('.box').before("<h2>welcome</h2>");
+})
+
+// empty and remove method /
+$('.empty').click(function(){
+    $('.box').empty();
+})
+$('.remove').click(function(){
+    $('.box').remove();
+})
+
+
+
+    </script>
+</body>
+
+</html>
