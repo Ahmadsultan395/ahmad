@@ -1,0 +1,1158 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+html {
+    font-size: calc(10px + 1minv);
+}
+
+/* navbar */
+#navbar {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 111;
+}
+
+.navbar-logo img {
+    height: 3rem;
+    width: 8rem;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+
+}
+
+#menu a {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500;
+}
+
+.nav-search-bar {
+    background-color: black;
+    height: 3rem;
+    width: 10rem;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 0 .5rem;
+    align-items: center;
+    border-radius: 3rem;
+}
+
+.nav-search-bar input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 8rem;
+    color: white;
+}
+
+.nav-search-bar input::placeholder {
+    color: white;
+}
+
+
+/* media query */
+@media(max-width:900px) {
+    #menu a {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+}
+
+@media(max-width:780px) {
+    #menu a {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+}
+
+@media(max-width:680px) {
+    #menu a {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+
+@media(max-width:600px) {
+    #menu a {
+        font-size: .8rem;
+        font-weight: 400;
+    }
+}
+
+@media(max-width:500px) {
+    #menu a {
+        display: none;
+    }
+}
+
+/* end */
+/* =================/ */
+
+/* head section */
+.head-section {
+    /* background-color: aqua; */
+    min-height: 70vh;
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 7rem;
+}
+
+.head-section-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.head-section-content h2 {
+    font-size: 3rem;
+    padding-left: 2rem;
+    padding-bottom: 1.2rem;
+}
+
+.head-section-heading {
+    background-color: rgb(41, 40, 40);
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-section-heading h1 {
+    font-size: 7rem;
+    color: white;
+    font-weight: 500;
+    padding: .3rem;
+}
+
+.head-section-content h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+
+}
+
+.head-section-h3 {
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.head-section-h3::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 31%;
+    background-color: orange;
+}
+
+.head-section-content p {
+    font-size: 1.1rem;
+    padding-left: 4rem;
+    padding-bottom: .5rem;
+    margin-top: 1rem;
+}
+
+.head-section-image {
+    width: 100%;
+    display: flex;
+    /* justify-content: end; */
+}
+
+.head-section-image img {
+    height: 30rem;
+    width: 25rem;
+    padding: 2rem;
+    background-color: rgb(41, 40, 40);
+    border-radius: 0 0 0 5rem;
+}
+
+.Subtract {
+    /* background-color: aqua; */
+    height: 8rem;
+    width: 8rem;
+}
+
+/* media query */
+@media(max-width:1000px) {
+    .head-section {
+        flex-wrap: wrap;
+    }
+
+    .nav-search-bar {
+        display: none;
+    }
+
+    .head-section-image {
+        justify-content: center;
+    }
+}
+
+@media(max-width:800px) {
+
+    .head-section-heading h1 {
+        font-size: 6rem;
+        height: 8rem;
+    }
+
+    .head-section-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .head-section-image img {
+        height: 25rem;
+        width: 20rem;
+    }
+}
+
+@media(max-width:600px) {
+
+    .head-section-heading h1 {
+        font-size: 5rem;
+        height: 7rem;
+    }
+
+    .head-section-content h2 {
+        font-size: 2rem;
+    }
+
+}
+
+@media(max-width:550px) {
+    .head-section-content p {
+        font-size: 1rem;
+        padding: 2rem;
+    }
+}
+
+@media(max-width:500px) {
+
+    .head-section-heading h1 {
+        font-size: 4rem;
+        height: 6rem;
+    }
+
+    .head-section-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .head-section-image img {
+        height: 22rem;
+        width: 18rem;
+    }
+}
+
+@media(max-width:400px) {
+
+    .head-section-heading h1 {
+        font-size: 3rem;
+        height: 6rem;
+    }
+
+    .head-section-content h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* end */
+
+/* work seciton-/ */
+.work-section {
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.work-section-image {
+    height: 100vh;
+    width: 100%;
+}
+
+.work-section-image img {
+    /* height: 45rem; */
+    height: 100%;
+    width: 100%;
+}
+
+.work-section-content {
+    /* position: relative; */
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    padding-right: 1rem;
+}
+
+.work-section-content-title {
+    background-color: rgb(1, 1, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.work-section-content-title h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.work-section-content p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.work-section-content-image {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-top: 8rem;
+}
+
+.work-section-content-image img {
+    height: 15rem;
+    width: 22rem;
+
+}
+
+
+
+/* media query */
+@media(max-width:800px) {
+    .work-section {
+        flex-wrap: wrap;
+    }
+
+    .work-section-content-image {
+        justify-content: center;
+    }
+
+    .work-section-content-image img {
+        height: 20rem;
+        width: 25rem;
+
+    }
+}
+
+@media(max-width:600px) {
+    .work-section-content-title h1 {
+        color: white;
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 1rem;
+    }
+}
+
+/* end? */
+/* ==============/ */
+/* professsional-service */
+.professsional-service {
+    width: 60%;
+    margin-top: 6rem;
+}
+
+.professsional-service h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    background-color: rgb(1, 1, 36);
+    padding: 1.5rem;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* end */
+/* ============== */
+
+/* professsional-cards */
+#pro-cards {
+    /* background-color: aqua; */
+    min-height: 70vh;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pro-card-inner {
+    min-height: 70vh;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+/* pro card 1 */
+.pro-card1 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(1, 1, 36);
+    border-radius: 1rem;
+}
+
+.pro-card1 img {
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+.pro-card1 h3 {
+    font-size: 1.4rem;
+    font-family: 500;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    text-align: center;
+    color: orange;
+}
+
+.pro-card1 p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+/* pro card 2 */
+.pro-card2 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(1, 1, 36);
+    border-radius: 1rem;
+}
+
+.pro-card2 img {
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+.pro-card2 h3 {
+    font-size: 1.4rem;
+    font-family: 500;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    text-align: center;
+    color: orange;
+}
+
+.pro-card2 p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+/* pro card 3 */
+.pro-card3 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(1, 1, 36);
+    border-radius: 1rem;
+}
+
+.pro-card3 img {
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+.pro-card3 h3 {
+    font-size: 1.4rem;
+    font-family: 500;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    text-align: center;
+    color: orange;
+}
+
+.pro-card3 p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+/* pro card 4 */
+.pro-card4 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(1, 1, 36);
+    border-radius: 1rem;
+}
+
+.pro-card4 img {
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+.pro-card4 h3 {
+    font-size: 1.4rem;
+    font-family: 500;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    text-align: center;
+    color: orange;
+}
+
+.pro-card4 p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+/* pro card 5 */
+.pro-card5 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(1, 1, 36);
+    border-radius: 1rem;
+}
+
+.pro-card5 img {
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+.pro-card5 h3 {
+    font-size: 1.4rem;
+    font-family: 500;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    text-align: center;
+    color: orange;
+}
+
+.pro-card5 p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+/* pro card 6 */
+.pro-card6 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(1, 1, 36);
+    border-radius: 1rem;
+}
+
+.pro-card6 img {
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+.pro-card6 h3 {
+    font-size: 1.4rem;
+    font-family: 500;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    text-align: center;
+    color: orange;
+}
+
+.pro-card6 p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+/* pro card 7 */
+.pro-card7 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(1, 1, 36);
+    border-radius: 1rem;
+}
+
+.pro-card7 img {
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+.pro-card7 h3 {
+    font-size: 1.4rem;
+    font-family: 500;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    text-align: center;
+    color: orange;
+}
+
+.pro-card7 p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+/* pro card 8 */
+.pro-card8 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(1, 1, 36);
+    border-radius: 1rem;
+}
+
+.pro-card8 img {
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+.pro-card8 h3 {
+    font-size: 1.4rem;
+    font-family: 500;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    text-align: center;
+    color: orange;
+}
+
+.pro-card8 p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+
+
+/* media query */
+@media(max-width:930px) {
+
+    .professsional-service h1 {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+}
+
+@media(max-width:850px) {
+    .pro-card-inner {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .professsional-service h1 {
+        font-size: 2.8rem;
+        font-weight: 500;
+    }
+
+    .professsional-service h1 {
+        font-size: 2.8rem;
+        font-weight: 500;
+    }
+}
+
+@media(max-width:750px) {
+    .professsional-service h1 {
+        font-size: 2.3rem;
+        font-weight: 500;
+    }
+}
+
+@media(max-width:700px) {
+    .pro-card-inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:650px) {
+    .professsional-service h1 {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width:500px) {
+    .pro-card-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .professsional-service h1 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-top: 2rem;
+    }
+
+    .professsional-service {
+        margin-top: 8rem;
+    }
+
+    .work-section-content-image img {
+        height: 14rem;
+        width: 18rem;
+    }
+}
+
+@media(max-width:440px) {
+    .pro-card-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .professsional-service h1 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top: 2rem;
+    }
+
+    /* .pro-card-inner{
+        width: 90%;
+    } */
+}
+
+@media(max-width:385px) {
+
+    .professsional-service h1 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-top: 2rem;
+    }
+
+    .professsional-service {
+        margin-top: 10rem;
+    }
+
+    .work-section-content-image img {
+        height: 13rem;
+        width: 16rem;
+    }
+
+    .head-section-image img {
+        height: 20rem;
+        width: 15rem;
+        padding: 1.5rem;
+    }
+}
+
+/* :end */
+/* ================= */
+/* our team heading only  */
+.our-team-heading {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-team-heading-inner {
+    background-color: rgb(1, 1, 36);
+    width: 90%;
+}
+
+.our-team-heading-inner h1 {
+    font-size: 2.5rem;
+    font-size: 600;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+@media(max-width:700px) {
+    .our-team-heading-inner h1 {
+        font-size: 2rem;
+    }
+
+}
+
+@media(max-width:550px) {
+    .our-team-heading-inner h1 {
+        font-size: 1.5rem;
+    }
+
+}
+
+/* end */
+
+/* team cards */
+.team-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+}
+
+.team-section-inner {
+    /* flex-wrap: wrap; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: bisque; */
+    min-height: 68vh;
+    width: 95%;
+    gap: 7rem;
+}
+
+/* card1111111111111111111111111111 */
+.team-card1 {
+    min-height: 70vh;
+    min-width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+.team-card1-content {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    background-color: orange;
+    z-index: 2;
+}
+
+.team-card1-content-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 70%;
+    min-height: 30vh;
+    margin-right: 1rem;
+
+}
+
+.team-card1-image-div {
+    height: 40vh;
+    width: 98%;
+    /* background-color: white; */
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2%;
+}
+
+.team-card1-image {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.team-card1-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.team-card1-content-inner h1{
+    color: rgb(1, 1, 87);
+    text-align: center;
+    font-size: 1.5rem;
+}
+.team-card1-content-inner h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+.team-card1-content-inner .fa{
+    color: white;
+    text-align: start;
+    font-size: 1rem;
+}
+.team-card1-content-inner a{
+    color: black;
+    font-size: .6rem;
+}
+
+/* card22222222222222222222222222222222222222 */
+
+.team-card2 {
+    min-height: 70vh;
+    min-width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+.team-card2-content {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    background-color: orange;
+
+    z-index: 2;
+}
+
+.team-card2-content-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 70%;
+    min-height: 30vh;
+    margin-right: 1rem;
+
+}
+
+.team-card2-image-div {
+    height: 40vh;
+    width: 98%;
+    /* background-color: white; */
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2%;
+}
+
+.team-card2-image {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.team-card2-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.team-card2-content-inner h1{
+    color: rgb(1, 1, 87);
+    text-align: center;
+    font-size: 1.5rem;
+}
+.team-card2-content-inner h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+.team-card2-content-inner .fa{
+    color: white;
+    text-align: start;
+    font-size: 1rem;
+}
+.team-card2-content-inner a{
+    color: black;
+    font-size: .6rem;
+}
+
+/* card 33333333333333333333333333333333333333333333 */
+
+.team-card3{
+    min-height: 70vh;
+    min-width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    }
+    .team-card3-content{
+        display: flex;
+        align-items:end;
+        justify-content: center;
+        height: 50vh; 
+        width: 100%; 
+    background-color: orange;
+    
+    z-index: 2;
+    }
+    .team-card3-content-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5rem;
+        width: 70%;
+        min-height: 30vh;
+        margin-right: 1rem;
+    }
+    .team-card3-image-div{
+        height:40vh; 
+        width: 98%; 
+        /* background-color: white; */
+        border-radius: 50%;
+        border: 2px solid black; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 2%;
+    }
+    .team-card3-image{
+        height: 90%;
+        width:90%;
+        object-fit: cover;
+        background-position: center;
+        background-size: contain;
+        border-radius:50%; 
+        overflow: hidden;
+        z-index: 3;
+    }
+    .team-card3-image img{
+        height: 100%;
+        width: 100%;
+       object-fit: fill;
+    }
+    .team-card3-content-inner h1{
+        color: rgb(1, 1, 87);
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .team-card3-content-inner h2{
+        color: white;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+    .team-card3-content-inner .fa{
+        color: white;
+        text-align: start;
+        font-size: 1rem;
+    }
+    .team-card3-content-inner a{
+        color: black;
+        font-size: .6rem;
+    }
+
+
+    /* media query */
+    @media(max-width:900px) {
+        .team-section-inner {
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+    
+    }
+    
+    /* end */
+/* ================== */
+
+
+/* recent-project-heading */
+.recent-project-heading{
+    min-height: 30vh;
+    width: 100%;
+    /* background-color: aqua; */
+}
+.recent-project-heading h1{
+   font-size: 3rem;
+   font-weight: 500;
+   background-color: rgb(1, 1, 36);
+   width: 50%;
+   padding: 1rem;
+   text-align: center;
+   color: white ;
+   margin-bottom: 2.5rem;
+}
+
+.recent-project-heading p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0 4rem;
+ }
+   /* end */
+   /* ======================= */
+
+   /* recent project cards */
+.recent-project-card{
+    /* background-color: antiquewhite; */
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.recent-project-card img{
+    height: 15rem;
+}
+.recent-project1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+.recent-project2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+/* media query */
+@media(max-width:700px) {
+    .recent-project-heading h1{
+        font-size: 2.5rem;
+        font-weight: 500;
+     }
+}
+
+@media(max-width:550px) {
+    .recent-project-heading h1{
+        font-size: 2rem;
+        font-weight: 500;
+     }
+
+}
+@media(max-width:450px) {
+    .recent-project-heading h1{
+        font-size: 1.4rem;
+        font-weight: 500;
+     }
+     .recent-project-card img{
+        height: 11rem;
+    }
+
+}
