@@ -877,23 +877,26 @@ html {
     object-fit: fill;
 }
 
-.team-card1-content-inner h1{
+.team-card1-content-inner h1 {
     color: rgb(1, 1, 87);
     text-align: center;
     font-size: 1.5rem;
 }
-.team-card1-content-inner h2{
+
+.team-card1-content-inner h2 {
     color: white;
     text-align: center;
     margin-bottom: 1rem;
     font-size: 1.4rem;
 }
-.team-card1-content-inner .fa{
+
+.team-card1-content-inner .fa {
     color: white;
     text-align: start;
     font-size: 1rem;
 }
-.team-card1-content-inner a{
+
+.team-card1-content-inner a {
     color: black;
     font-size: .6rem;
 }
@@ -962,30 +965,33 @@ html {
     object-fit: fill;
 }
 
-.team-card2-content-inner h1{
+.team-card2-content-inner h1 {
     color: rgb(1, 1, 87);
     text-align: center;
     font-size: 1.5rem;
 }
-.team-card2-content-inner h2{
+
+.team-card2-content-inner h2 {
     color: white;
     text-align: center;
     margin-bottom: 1rem;
     font-size: 1.4rem;
 }
-.team-card2-content-inner .fa{
+
+.team-card2-content-inner .fa {
     color: white;
     text-align: start;
     font-size: 1rem;
 }
-.team-card2-content-inner a{
+
+.team-card2-content-inner a {
     color: black;
     font-size: .6rem;
 }
 
 /* card 33333333333333333333333333333333333333333333 */
 
-.team-card3{
+.team-card3 {
     min-height: 70vh;
     min-width: 24%;
     display: flex;
@@ -993,116 +999,129 @@ html {
     justify-content: end;
     align-items: center;
     position: relative;
-    }
-    .team-card3-content{
-        display: flex;
-        align-items:end;
-        justify-content: center;
-        height: 50vh; 
-        width: 100%; 
+}
+
+.team-card3-content {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
     background-color: orange;
-    
+
     z-index: 2;
-    }
-    .team-card3-content-inner{
-        display: flex;
+}
+
+.team-card3-content-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 70%;
+    min-height: 30vh;
+    margin-right: 1rem;
+}
+
+.team-card3-image-div {
+    height: 40vh;
+    width: 98%;
+    /* background-color: white; */
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2%;
+}
+
+.team-card3-image {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.team-card3-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.team-card3-content-inner h1 {
+    color: rgb(1, 1, 87);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.team-card3-content-inner h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.team-card3-content-inner .fa {
+    color: white;
+    text-align: start;
+    font-size: 1rem;
+}
+
+.team-card3-content-inner a {
+    color: black;
+    font-size: .6rem;
+}
+
+
+/* media query */
+@media(max-width:900px) {
+    .team-section-inner {
+        flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
-        margin-top: 5rem;
-        width: 70%;
-        min-height: 30vh;
-        margin-right: 1rem;
-    }
-    .team-card3-image-div{
-        height:40vh; 
-        width: 98%; 
-        /* background-color: white; */
-        border-radius: 50%;
-        border: 2px solid black; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 2%;
-    }
-    .team-card3-image{
-        height: 90%;
-        width:90%;
-        object-fit: cover;
-        background-position: center;
-        background-size: contain;
-        border-radius:50%; 
-        overflow: hidden;
-        z-index: 3;
-    }
-    .team-card3-image img{
-        height: 100%;
-        width: 100%;
-       object-fit: fill;
-    }
-    .team-card3-content-inner h1{
-        color: rgb(1, 1, 87);
-        text-align: center;
-        font-size: 1.5rem;
-    }
-    .team-card3-content-inner h2{
-        color: white;
-        text-align: center;
-        margin-bottom: 1rem;
-        font-size: 1.4rem;
-    }
-    .team-card3-content-inner .fa{
-        color: white;
-        text-align: start;
-        font-size: 1rem;
-    }
-    .team-card3-content-inner a{
-        color: black;
-        font-size: .6rem;
+        gap: 1.5rem;
     }
 
+}
 
-    /* media query */
-    @media(max-width:900px) {
-        .team-section-inner {
-            flex-wrap: wrap;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-    
-    }
-    
-    /* end */
+/* end */
 /* ================== */
 
 
 /* recent-project-heading */
-.recent-project-heading{
+.recent-project-heading {
+    display: flex;
+    flex-direction: column;
     min-height: 30vh;
     width: 100%;
     /* background-color: aqua; */
 }
-.recent-project-heading h1{
-   font-size: 3rem;
-   font-weight: 500;
-   background-color: rgb(1, 1, 36);
-   width: 50%;
-   padding: 1rem;
-   text-align: center;
-   color: white ;
-   margin-bottom: 2.5rem;
+
+.recent-project-heading h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    background-color: rgb(1, 1, 36);
+    width: 50%;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 2.5rem;
 }
 
-.recent-project-heading p{
+.recent-project-heading p {
     font-size: 1.2rem;
     font-weight: 500;
     padding: 0 4rem;
- }
-   /* end */
-   /* ======================= */
+}
 
-   /* recent project cards */
-.recent-project-card{
+/* end */
+/* ======================= */
+
+/* recent project cards */
+.recent-project-card {
     /* background-color: antiquewhite; */
     min-height: 80vh;
     width: 100%;
@@ -1111,11 +1130,14 @@ html {
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    margin-bottom: 3rem;
 }
-.recent-project-card img{
+
+.recent-project-card img {
     height: 15rem;
 }
-.recent-project1{
+
+.recent-project1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1123,7 +1145,8 @@ html {
     gap: 3rem;
     margin-bottom: 3rem;
 }
-.recent-project2{
+
+.recent-project2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1133,26 +1156,200 @@ html {
 
 /* media query */
 @media(max-width:700px) {
-    .recent-project-heading h1{
+    .recent-project-heading{
+align-items: center;
+justify-content: center;
+    }
+    .recent-project-heading h1 {
         font-size: 2.5rem;
         font-weight: 500;
-     }
+        text-align: center;
+    }
 }
 
 @media(max-width:550px) {
-    .recent-project-heading h1{
+    .recent-project-heading h1 {
         font-size: 2rem;
         font-weight: 500;
-     }
+    }
 
 }
+
 @media(max-width:450px) {
-    .recent-project-heading h1{
+    .recent-project-heading h1 {
         font-size: 1.4rem;
         font-weight: 500;
-     }
-     .recent-project-card img{
+    }
+
+    .recent-project-card img {
         height: 11rem;
     }
 
+}
+
+/* end */
+/* ===================== */
+
+
+/* media section */
+.media-section {
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(255, 166, 0, 0.388) 0%,rgba(255, 166, 0, 0.342) 25%,
+        white 25%, white 50%,
+        rgba(255, 166, 0, 0.546) 50% , rgba(255, 166, 0, 0.443) 75%,
+        white 75% , white 100%
+    );
+}
+
+.media-section-div {
+    min-height: 70vh;
+    width: 95%;
+    /* background-color: red; */
+    display: flex;
+
+}
+
+.media-section-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    width: 70% ;
+}
+
+.media-section-content-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.media-section-content-1 h1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: .4rem;
+}
+
+.media-section-content-1 h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: orange;
+    margin-bottom: 1rem;
+}
+
+.media-section-content-1 p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 6rem;
+}
+
+.media-section-content-2 {
+    min-width: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.media-section-content-2 h5 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-bottom: .4rem;
+}
+
+.media-section-content-2::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 50%;
+    background: orange;
+}
+
+.media-section-content-media {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border: 2px solid black;
+    padding: .5rem;
+    box-shadow: 1px 1px 10px black;
+}
+
+.media-section-content-media .fa {
+    font-size: 1rem;
+}
+
+.media-section-content-media a {
+    font-size: .8rem;
+    font-weight: 300;
+    color: black;
+    margin-left: .5rem;
+}
+
+.media-section-content-media-btns {
+    display: flex;
+    justify-content: end;
+}
+
+.media-section-content-media-btns .fa {
+    font-size: 1.5rem;
+     border: 2px solid white; 
+    box-shadow: 0 0 0 4px black, 0 0 0 4px black inset;
+    background-color: black;
+    border-radius: 50%;
+    padding: .6rem;
+    text-align: center;
+    margin-right: .3rem;
+    color: white;
+}
+.media-section-image{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(
+        to bottom right,
+        orange 0%,orange 25%,
+        white 25%, white 50%,
+        orange 50% , orange 75%,
+        white 75% , white 100%
+    ); */
+    /* opacity: 70%; */
+}
+.media-section-image img {
+    height: 18rem;
+    width: 15rem;
+z-index: 30;
+}
+
+/* media query */
+
+@media(max-width:890px) {
+   .media-section-div{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+   }
+.media-section-content-media{
+    width: 90%;
+    justify-self: center;
+}
+.media-section-image img{
+    margin-top: 2rem;
+}
+.media-section-content {
+   
+    width: 100% ;
+}
+}
+
+/* end=========================================================================== */
+
+/* universal fa class  */
+
+.fa:hover{
+color: rgb(0, 133, 186);
 }
