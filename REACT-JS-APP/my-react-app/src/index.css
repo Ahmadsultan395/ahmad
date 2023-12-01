@@ -1,0 +1,22 @@
+html{
+    background-color: darkslategray;
+}
+.container-fluid{
+    background-color: darkslategray;
+}
+input[type=text]{
+    outline: none;
+    border:none ;   
+    box-shadow: 2px 2px 5px black inset;
+}
+input[type=text]:focus{
+    outline: none;
+    border:none ;   
+    box-shadow: 2px 2px 5px black inset;
+}
+input::placeholder{
+    color: darkgray;
+}
+.listname{
+  border: 0.01rem solid gray;
+}
